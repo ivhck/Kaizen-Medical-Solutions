@@ -1,0 +1,41 @@
+{
+    "mission": "Ayudar a las empresas industriales a proteger su capital humano mediante soluciones médicas, normativas y financieras que convierten el cumplimiento en productividad.",
+    "vision": "Ser el aliado estratégico de la industria en salud ocupacional, transformando riesgos en oportunidades de crecimiento.",
+    "values": [
+        {
+            "title": "Profesionalismo",
+            "description": "Excelencia en cada proyecto, con equipo certificado y actualizado."
+        },
+        {
+            "title": "Ética",
+            "description": "Transparencia y responsabilidad en nuestras recomendaciones."
+        },
+        {
+            "title": "Evidencia Científica",
+            "description": "Decisiones basadas en datos y metodologías reconocidas internacionalmente."
+        },
+        {
+            "title": "Prevención",
+            "description": "Enfoque proactivo para evitar accidentes y enfermedades laborales."
+        },
+        {
+            "title": "Innovación",
+            "description": "Soluciones actualizadas con tecnología y mejores prácticas globales."
+        }
+    ],
+    "differential": [
+        "No solo realizamos estudios: ayudamos a que tu empresa reduzca costos",
+        "Mejoramos productividad mediante ambientes de trabajo seguros",
+        "Garantizamos cumplimiento con legislación mexicana e internacional",
+        "Disminuimos riesgos financieros derivados de siniestralidad",
+        "Transformamos la salud ocupacional en ventaja competitiva"
+    ],
+    "team": [
+        {
+            "name": "Nombre del Director",
+            "position": "Director General",
+            "expertise": "Salud Ocupacional, Ingeniería Industrial",
+            "image": "/assets/images/team/director.jpg"
+        }
+    ]
+}

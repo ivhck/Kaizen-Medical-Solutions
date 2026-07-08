@@ -1,0 +1,69 @@
+{
+    "form": {
+        "title": "Contáctanos",
+        "description": "Cuéntanos sobre tu empresa y los desafíos que enfrenta.",
+        "fields": [
+            {
+                "name": "nombre",
+                "label": "Nombre Completo",
+                "type": "text",
+                "required": true
+            },
+            {
+                "name": "empresa",
+                "label": "Nombre de la Empresa",
+                "type": "text",
+                "required": true
+            },
+            {
+                "name": "puesto",
+                "label": "Tu Puesto",
+                "type": "text",
+                "required": true
+            },
+            {
+                "name": "correo",
+                "label": "Correo Electrónico",
+                "type": "email",
+                "required": true
+            },
+            {
+                "name": "telefono",
+                "label": "Teléfono",
+                "type": "tel",
+                "required": true
+            },
+            {
+                "name": "colaboradores",
+                "label": "Número de Colaboradores",
+                "type": "number",
+                "required": false
+            },
+            {
+                "name": "mensaje",
+                "label": "Cuéntanos tu principal desafío",
+                "type": "textarea",
+                "required": true,
+                "placeholder": "¿Cuál es tu principal reto en salud ocupacional?"
+            }
+        ]
+    },
+    "scheduling": {
+        "title": "Agenda tu Consultoría",
+        "description": "Sesión de 15 minutos para analizar tu situación",
+        "duration": "15 minutos",
+        "integrations": {
+            "calendly": {
+                "username": "tu-username-calendly",
+                "embed_url": "https://calendly.com/tu-username/15min"
+            }
+        }
+    },
+    "info": {
+        "phone": "+52 (XX) XXXX-XXXX",
+        "email": "info@kaizenmedicalsolutions.com",
+        "address": "Dirección de la empresa",
+        "business_hours": "Lunes a Viernes, 8:00 AM - 6:00 PM",
+        "timezone": "America/Mexico_City"
+    }
+}

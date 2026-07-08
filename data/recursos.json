@@ -1,0 +1,122 @@
+{
+    "blog_posts": [
+        {
+            "id": "nom-036-explicada",
+            "title": "NOM-036 explicada para empresas",
+            "excerpt": "Guía completa sobre qué exige la norma de ergonomía y cómo implementarla.",
+            "category": "Normativa",
+            "date": "2024-01-15",
+            "author": "Kaizen Medical",
+            "image": "/assets/images/blog/nom-036.jpg",
+            "url": "/pages/recursos/nom-036-explicada.html"
+        },
+        {
+            "id": "reducir-prima-riesgo",
+            "title": "Cómo reducir la Prima de Riesgo IMSS",
+            "excerpt": "Estrategias probadas para disminuir tu Prima de Riesgo sin comprometer la seguridad.",
+            "category": "Financiero",
+            "date": "2024-01-10",
+            "author": "Kaizen Medical",
+            "image": "/assets/images/blog/prima-imss.jpg",
+            "url": "/pages/recursos/reducir-prima-riesgo.html"
+        },
+        {
+            "id": "enfermedad-general-riesgo-trabajo",
+            "title": "Diferencia entre enfermedad general y riesgo de trabajo",
+            "excerpt": "Clasificación correcta: cuándo una enfermedad es profesional y qué implica legalmente.",
+            "category": "Salud",
+            "date": "2024-01-05",
+            "author": "Kaizen Medical",
+            "image": "/assets/images/blog/clasificacion.jpg",
+            "url": "/pages/recursos/enfermedad-vs-riesgo.html"
+        },
+        {
+            "id": "que-revisa-stps",
+            "title": "¿Qué revisa la STPS durante una inspección?",
+            "excerpt": "Checklist completo de lo que espera encontrar la STPS y cómo prepararse.",
+            "category": "Auditoría",
+            "date": "2023-12-28",
+            "author": "Kaizen Medical",
+            "image": "/assets/images/blog/stps-inspeccion.jpg",
+            "url": "/pages/recursos/stps-inspeccion.html"
+        },
+        {
+            "id": "ergonomia-produccion",
+            "title": "Ergonomía en líneas de producción",
+            "excerpt": "Cómo optimizar puestos de trabajo para prevenir lesiones y aumentar rendimiento.",
+            "category": "Ergonomía",
+            "date": "2023-12-20",
+            "author": "Kaizen Medical",
+            "image": "/assets/images/blog/ergonomia-linea.jpg",
+            "url": "/pages/recursos/ergonomia-produccion.html"
+        },
+        {
+            "id": "disminuir-ausentismo",
+            "title": "Cómo disminuir el ausentismo laboral",
+            "excerpt": "Investigación y estrategias para reducir ausencias y mejorar la asistencia.",
+            "category": "Productividad",
+            "date": "2023-12-15",
+            "author": "Kaizen Medical",
+            "image": "/assets/images/blog/ausentismo.jpg",
+            "url": "/pages/recursos/disminuir-ausentismo.html"
+        }
+    ],
+    "resources": {
+        "videos": {
+            "title": "Videos Educativos",
+            "channel": "YouTube - Kaizen Medical Solutions",
+            "description": "Tutoriales, explicaciones normativas y casos de éxito."
+        },
+        "downloads": {
+            "title": "Descargas Gratuitas",
+            "items": [
+                {
+                    "name": "Checklist de Seguridad",
+                    "file": "checklist-seguridad.pdf"
+                },
+                {
+                    "name": "Matriz de Riesgos Plantilla",
+                    "file": "matriz-riesgos-plantilla.xlsx"
+                },
+                {
+                    "name": "Guía NOM-035",
+                    "file": "guia-nom-035.pdf"
+                }
+            ]
+        },
+        "newsletter": {
+            "title": "Newsletter Mensual",
+            "description": "Actualizaciones normativas, artículos y casos de éxito.",
+            "frequency": "Mensual"
+        }
+    },
+    "success_stories": [
+        {
+            "id": "caso-1",
+            "company": "Empresa Manufacturera XYZ",
+            "industry": "Manufactura",
+            "challenge": "Prima de Riesgo elevada y ausentismo recurrente",
+            "result": "Reducción del 35% en Prima de Riesgo",
+            "impact": "Ahorro anual de $250,000",
+            "image": "/assets/images/cases/case-1.jpg"
+        },
+        {
+            "id": "caso-2",
+            "company": "Grupo Industrial ABC",
+            "industry": "Alimentaria",
+            "challenge": "Inspección STPS inminente sin preparación",
+            "result": "Aprobación sin observaciones",
+            "impact": "Cero multas, proceso documentado",
+            "image": "/assets/images/cases/case-2.jpg"
+        },
+        {
+            "id": "caso-3",
+            "company": "Planta DEF",
+            "industry": "Química",
+            "challenge": "Lesiones frecuentes en línea de envasado",
+            "result": "Reducción del 60% en lesiones",
+            "impact": "Mejora de productividad y moral de equipo",
+            "image": "/assets/images/cases/case-3.jpg"
+        }
+    ]
+}
