@@ -9,7 +9,7 @@
             "Incrementa la productividad"
         ],
         "cta": "Agenda una Consultoría Gratuita",
-        "image": "/assets/images/hero-industrial.jpg"
+        "image": "assets/images/hero-industrial.jpg"
     },
     "problems": {
         "title": "Los problemas operativos cuestan más de lo que imaginas",
@@ -53,6 +53,6 @@
     "finalCta": {
         "title": "¿Listo para reducir riesgos y aumentar la rentabilidad de tu empresa?",
         "button": "Agenda una reunión de 15 minutos",
-        "image": "/assets/images/industrial-bg.jpg"
+        "image": "assets/images/industrial-bg.jpg"
     }
 }

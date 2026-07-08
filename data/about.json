@@ -35,7 +35,7 @@
             "name": "Nombre del Director",
             "position": "Director General",
             "expertise": "Salud Ocupacional, Ingeniería Industrial",
-            "image": "/assets/images/team/director.jpg"
+            "image": "assets/images/team/director.jpg"
         }
     ]
 }
