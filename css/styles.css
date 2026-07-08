@@ -468,7 +468,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: var(--space-sm) 0;
-    background: rgba(255, 255, 255, 0.96);
+    background: var(--white);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(var(--primary-rgb), 0.08);
     border-bottom: 1px solid rgba(var(--primary-rgb), 0.06);
@@ -482,10 +482,20 @@ header {
 
 .navbar-brand img,
 .navbar-logo {
-    max-height: 130px;
+    max-height: 120px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand a {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-brand:hover img,
@@ -1080,7 +1090,7 @@ textarea.form-control {
 
     .navbar-brand img,
     .navbar-logo {
-        max-height: 110px;
+        max-height: 48px;
     }
 
     .mobile-menu-toggle {
@@ -1140,7 +1150,7 @@ textarea.form-control {
 
     .navbar-brand img,
     .navbar-logo {
-        max-height: 90px;
+        max-height: 42px;
     }
 
     .footer-logo {
