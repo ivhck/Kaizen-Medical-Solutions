@@ -22,10 +22,29 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header id="navbar"></header>
+    <header id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="../">Kaizen Medical</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="recursos.html" class="nav-link">Recursos</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="contacto.html#contacto" class="nav-link nav-cta">Agenda una Consultoría</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- HERO -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -35,18 +54,477 @@
         </div>
     </section>
 
-    <!-- SERVICIOS DETALLADOS -->
     <section class="section">
-        <div class="container" id="services-detail"></div>
+        <div class="container">
+            <div id="ingenieria-ergonomica"
+                style="margin-bottom: var(--space-3xl); padding-bottom: var(--space-3xl); border-bottom: 1px solid var(--gray-light);">
+                <div style="margin-bottom: var(--space-2xl);">
+                    <h2 class="text-primary" style="margin-bottom: var(--space-sm);">Ingeniería Ergonómica</h2>
+                    <p
+                        style="font-size: var(--font-size-lg); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
+                        NOM-036</p>
+                    <p style="font-size: var(--font-size-lg); color: var(--gray); margin-bottom: var(--space-lg);">
+                        Identificamos y corregimos factores de riesgo ergonómico en tus procesos.</p>
+                    <a href="contacto.html" class="btn btn-primary">Agenda una consultoría</a>
+                </div>
+                <div class="grid-2" style="gap: var(--space-2xl); margin-top: var(--space-2xl);">
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">¿Qué problemas resuelve?</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Lesiones
+                                    musculoesqueléticas frecuentes</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Posturas
+                                    inadecuadas en puestos de trabajo</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Movimientos
+                                    repetitivos sin control</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Equipos
+                                    y herramientas no adaptadas</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Alcance técnico</h3>
+                        <p>Evaluación completa de puestos de trabajo conforme a NOM-036-SSA3-2013. Análisis de posturas,
+                            movimientos repetitivos, fuerzas aplicadas y condiciones ambientales. Identificación de
+                            tareas críticas y exposiciones.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Entregables</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Estudio
+                                    Ergonómico completo</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Matriz
+                                    de Riesgos Ergonómicos</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Programa
+                                    de Controles y Mejoras</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Evidencias
+                                    y reportes NOM-036</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Capacitación
+                                    al personal</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Beneficios e impacto</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Reducción
+                                    de incapacidades por lesiones musculoesqueléticas</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Aumento
+                                    de productividad</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Cumplimiento
+                                    con NOM-036</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Reducción
+                                    de Prima de Riesgo IMSS</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Ambiente
+                                    de trabajo más seguro</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cta-section" style="margin-top: var(--space-2xl);">
+                    <h3>¿Interesado en este servicio?</h3>
+                    <a href="contacto.html" class="btn btn-secondary btn-lg">Solicitar evaluación</a>
+                </div>
+            </div>
+
+            <div id="auditoria-stps"
+                style="margin-bottom: var(--space-3xl); padding-bottom: var(--space-3xl); border-bottom: 1px solid var(--gray-light);">
+                <div style="margin-bottom: var(--space-2xl);">
+                    <h2 class="text-primary" style="margin-bottom: var(--space-sm);">Auditoría STPS</h2>
+                    <p
+                        style="font-size: var(--font-size-lg); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
+                        NOM-030 y NOM-035</p>
+                    <p style="font-size: var(--font-size-lg); color: var(--gray); margin-bottom: var(--space-lg);">
+                        Auditoría integral de cumplimiento normativo ante STPS e IMSS.</p>
+                    <a href="contacto.html" class="btn btn-primary">Agenda una consultoría</a>
+                </div>
+                <div class="grid-2" style="gap: var(--space-2xl); margin-top: var(--space-2xl);">
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">¿Qué problemas resuelve?</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Riesgo
+                                    de inspección sorpresa de STPS</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Multas
+                                    significativas por incumplimiento</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Desconocimiento
+                                    de obligaciones normativas</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Falta
+                                    de documentación adecuada</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Alcance técnico</h3>
+                        <p>Revisión exhaustiva del cumplimiento con NOM-030-SSA3-2013 (servicios de salud ocupacional) y
+                            NOM-035-STPS-2018 (factores de riesgo psicosocial). Evaluación de procesos, documentación,
+                            equipamiento y capacitación.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Entregables</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Informe
+                                    de Auditoría detallado</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Plan
+                                    de Acción correctivo</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Documentación
+                                    completa</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Certificación
+                                    de cumplimiento</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Asesoría
+                                    para inspecciones</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Beneficios e impacto</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Blindaje
+                                    ante inspecciones</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Evitar
+                                    multas de STPS</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Demostrar
+                                    compromiso con seguridad</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Mejora
+                                    del clima laboral</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Reducción
+                                    de siniestralidad</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cta-section" style="margin-top: var(--space-2xl);">
+                    <h3>¿Interesado en este servicio?</h3>
+                    <a href="contacto.html" class="btn btn-secondary btn-lg">Solicitar evaluación</a>
+                </div>
+            </div>
+
+            <div id="defensa-prima-imss"
+                style="margin-bottom: var(--space-3xl); padding-bottom: var(--space-3xl); border-bottom: 1px solid var(--gray-light);">
+                <div style="margin-bottom: var(--space-2xl);">
+                    <h2 class="text-primary" style="margin-bottom: var(--space-sm);">Defensa de Prima IMSS</h2>
+                    <p
+                        style="font-size: var(--font-size-lg); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
+                        Optimización financiera</p>
+                    <p style="font-size: var(--font-size-lg); color: var(--gray); margin-bottom: var(--space-lg);">
+                        Análisis y reducción de tu Prima de Riesgo del Seguro Social.</p>
+                    <a href="contacto.html" class="btn btn-primary">Agenda una consultoría</a>
+                </div>
+                <div class="grid-2" style="gap: var(--space-2xl); margin-top: var(--space-2xl);">
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">¿Qué problemas resuelve?</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Prima
+                                    de Riesgo innecesariamente alta</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Accidentes
+                                    registrados que pueden evitarse</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Falta
+                                    de evidencia de medidas preventivas</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Siniestros
+                                    evitables elevando los costos</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Alcance técnico</h3>
+                        <p>Análisis de historial de accidentes, evaluación de medidas preventivas implementadas,
+                            identificación de oportunidades de mejora, negociación con IMSS basada en evidencia
+                            científica de prevención.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Entregables</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Análisis
+                                    de Prima actual</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Propuesta
+                                    de reducción fundamentada</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Documentación
+                                    de medidas preventivas</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Seguimiento
+                                    periódico</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Apoyo
+                                    en trámites IMSS</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Beneficios e impacto</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Ahorro
+                                    significativo en Prima de Riesgo</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>ROI
+                                    inmediato</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Reducción
+                                    de siniestralidad</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Mejora
+                                    en procesos de prevención</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Transparencia
+                                    financiera</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cta-section" style="margin-top: var(--space-2xl);">
+                    <h3>¿Interesado en este servicio?</h3>
+                    <a href="contacto.html" class="btn btn-secondary btn-lg">Solicitar evaluación</a>
+                </div>
+            </div>
+
+            <div id="gestion-integral-riesgos"
+                style="margin-bottom: var(--space-3xl); padding-bottom: var(--space-3xl); border-bottom: 1px solid var(--gray-light);">
+                <div style="margin-bottom: var(--space-2xl);">
+                    <h2 class="text-primary" style="margin-bottom: var(--space-sm);">Gestión Integral de Riesgos</h2>
+                    <p
+                        style="font-size: var(--font-size-lg); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
+                        Control ST7, ST2 y ST9</p>
+                    <p style="font-size: var(--font-size-lg); color: var(--gray); margin-bottom: var(--space-lg);">
+                        Sistema completo de identificación, evaluación y control de riesgos.</p>
+                    <a href="contacto.html" class="btn btn-primary">Agenda una consultoría</a>
+                </div>
+                <div class="grid-2" style="gap: var(--space-2xl); margin-top: var(--space-2xl);">
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">¿Qué problemas resuelve?</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Falta
+                                    de identificación sistemática de riesgos</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Controles
+                                    inefectivos o ausentes</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Desconocimiento
+                                    de exposiciones críticas</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Ausencia
+                                    de mejora continua</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Alcance técnico</h3>
+                        <p>Identificación de peligros mediante formatos ST7, ST2 y ST9. Evaluación de riesgos con
+                            matrices. Diseño e implementación de controles jerárquicos. Monitoreo continuo y mejora.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Entregables</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Matriz
+                                    de Riesgos completa</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Fichas
+                                    de Control por riesgo</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Programa
+                                    de Monitoreo</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Reportes
+                                    trimestrales</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Capacitación
+                                    operativa</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Beneficios e impacto</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Identificación
+                                    clara de riesgos críticos</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Controles
+                                    efectivos y medibles</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Reducción
+                                    de accidentes e incidentes</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Cumplimiento
+                                    OSHA/OHSAS</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Mejora
+                                    continua documentada</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cta-section" style="margin-top: var(--space-2xl);">
+                    <h3>¿Interesado en este servicio?</h3>
+                    <a href="contacto.html" class="btn btn-secondary btn-lg">Solicitar evaluación</a>
+                </div>
+            </div>
+
+            <div id="inteligencia-epidemiologica">
+                <div style="margin-bottom: var(--space-2xl);">
+                    <h2 class="text-primary" style="margin-bottom: var(--space-sm);">Inteligencia Epidemiológica</h2>
+                    <p
+                        style="font-size: var(--font-size-lg); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
+                        Análisis de accidentes y prevención</p>
+                    <p style="font-size: var(--font-size-lg); color: var(--gray); margin-bottom: var(--space-lg);">
+                        Análisis científico de patrones de accidentes para prevención estratégica.</p>
+                    <a href="contacto.html" class="btn btn-primary">Agenda una consultoría</a>
+                </div>
+                <div class="grid-2" style="gap: var(--space-2xl); margin-top: var(--space-2xl);">
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">¿Qué problemas resuelve?</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Accidentes
+                                    recurrentes sin causa raíz identificada</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Falta
+                                    de análisis epidemiológico de siniestros</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Decisiones
+                                    preventivas sin datos</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✓</span><span>Patrones
+                                    de enfermedad no identificados</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Alcance técnico</h3>
+                        <p>Recolección y análisis de datos epidemiológicos. Identificación de patrones, tendencias y
+                            factores de riesgo. Análisis de causa raíz. Modelamiento predictivo de riesgos.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Entregables</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Informe
+                                    Epidemiológico detallado</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Análisis
+                                    de Causa Raíz</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Identificación
+                                    de Patrones críticos</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Recomendaciones
+                                    Preventivas</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">✔</span><span>Dashboard
+                                    de Monitoreo</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-primary" style="margin-bottom: var(--space-lg);">Beneficios e impacto</h3>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Prevención
+                                    basada en evidencia</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Identificación
+                                    de patrones ocultos</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Intervenciones
+                                    más efectivas</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Reducción
+                                    drástica de siniestralidad</span></li>
+                            <li style="display: flex; gap: var(--space-md);"><span
+                                    style="color: var(--accent); font-weight: 700; min-width: 20px;">→</span><span>Mejor
+                                    asignación de recursos preventivos</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cta-section" style="margin-top: var(--space-2xl);">
+                    <h3>¿Interesado en este servicio?</h3>
+                    <a href="contacto.html" class="btn btn-secondary btn-lg">Solicitar evaluación</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="../assets/images/Logo_Kaizen_white.png" alt="Kaizen Medical Solutions"
+                        class="footer-logo">
+                    <p>Soluciones de Salud Ocupacional para una Industria más Productiva y Rentable</p>
+                    <ul class="social-links">
+                        <li><a href="#facebook" title="Facebook" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#linkedin" title="LinkedIn" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#youtube" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="../">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="recursos.html">Recursos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-phone"></i> Contacto</h4>
+                    <ul>
+                        <li><a href="tel:+52 (XX) XXXX-XXXX"><i class="fas fa-phone-alt"></i> +52 (XX) XXXX-XXXX</a>
+                        </li>
+                        <li><a href="mailto:info@kaizenmedicalsolutions.com"><i class="fas fa-envelope"></i>
+                                info@kaizenmedicalsolutions.com</a></li>
+                        <li>
+                            <p><i class="fas fa-map-marker-alt"></i> Dirección de la empresa</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-book"></i> Recursos</h4>
+                    <ul>
+                        <li><a href="recursos.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="recursos.html"><i class="fas fa-download"></i> Descargas</a></li>
+                        <li><a href="#"><i class="fas fa-envelope-open"></i> Newsletter</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-shield-alt"></i> Aviso de Privacidad</a>
+                    <a href="#"><i class="fas fa-cookie"></i> Política de Cookies</a>
+                    <a href="#"><i class="fas fa-file-contract"></i> Términos de Servicio</a>
+                </div>
+                <p><i class="fas fa-copyright"></i> 2024 Kaizen Medical Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-    <script src="../js/config.js"></script>
-    <script src="../js/components.js"></script>
     <script src="../js/interactions.js"></script>
-    <script src="../js/servicios.js"></script>
 </body>
 
 </html>

@@ -22,10 +22,29 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header id="navbar"></header>
+    <header id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="../">Kaizen Medical</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="recursos.html" class="nav-link">Recursos</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="#contacto" class="nav-link nav-cta">Agenda una Consultoría</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- HERO -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -35,51 +54,103 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DE CONTACTO -->
     <section class="section" id="contacto">
         <div class="container">
             <div class="grid-2" style="gap: var(--space-2xl);">
-                <!-- FORMULARIO -->
                 <div>
                     <h2 class="text-primary mb-lg">Envíanos un mensaje</h2>
-                    <form id="contact-form" class="contact-form">
-                        <div id="form-fields"></div>
+                    <form id="contact-form" class="contact-form" action="mailto:info@kaizenmedicalsolutions.com"
+                        method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa" class="form-label">Nombre de la Empresa *</label>
+                            <input type="text" id="empresa" name="empresa" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="puesto" class="form-label">Tu Puesto *</label>
+                            <input type="text" id="puesto" name="puesto" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo" class="form-label">Correo Electrónico *</label>
+                            <input type="email" id="correo" name="correo" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono" class="form-label">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="colaboradores" class="form-label">Número de Colaboradores</label>
+                            <input type="number" id="colaboradores" name="colaboradores" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje" class="form-label">Cuéntanos tu principal desafío *</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control"
+                                placeholder="¿Cuál es tu principal reto en salud ocupacional?" required></textarea>
+                        </div>
                         <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
                     </form>
-                    <div id="form-message" style="margin-top: var(--space-lg); display: none;"></div>
+                    <div id="form-message"
+                        style="margin-top: var(--space-lg); display: block; background-color: #eaf4ff; color: var(--primary); padding: var(--space-md); border-radius: var(--radius-lg);">
+                        El formulario abre tu correo para enviar el mensaje a info@kaizenmedicalsolutions.com.
+                    </div>
                 </div>
 
-                <!-- AGENDAMIENTO / INFO -->
                 <div>
                     <h2 class="text-primary mb-lg">Agenda tu consultoría</h2>
                     <p style="margin-bottom: var(--space-xl); font-size: var(--font-size-lg);">
                         Sesión de 15 minutos para analizar tu situación específica.
                     </p>
 
-                    <!-- Calendly embed -->
-                    <div id="calendly-embed"></div>
+                    <div id="calendly-embed" class="card"
+                        style="padding: var(--space-xl); margin-bottom: var(--space-2xl);">
+                        <h3 class="card-title">Agenda rápida</h3>
+                        <p class="card-text">Si ya tienes un enlace de Calendly, puedes insertarlo aquí. Mientras tanto,
+                            usa el correo o teléfono de contacto.</p>
+                        <a href="mailto:info@kaizenmedicalsolutions.com" class="btn btn-primary btn-sm">Escribir por
+                            correo</a>
+                    </div>
 
-                    <!-- Información de contacto -->
                     <div
                         style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--gray-light);">
                         <h3 class="text-primary mb-lg">Información de Contacto</h3>
-                        <div id="contact-info"></div>
+                        <div id="contact-info">
+                            <div style="display: flex; flex-direction: column; gap: var(--space-lg);">
+                                <div
+                                    style="padding: var(--space-lg); background-color: var(--light); border-radius: var(--radius-lg);">
+                                    <p
+                                        style="font-size: var(--font-size-sm); color: var(--gray); margin-bottom: var(--space-sm);">
+                                        Teléfono</p>
+                                    <a href="tel:+52 (XX) XXXX-XXXX"
+                                        style="font-size: var(--font-size-lg); font-weight: 600; color: var(--primary);">+52
+                                        (XX) XXXX-XXXX</a>
+                                </div>
+                                <div
+                                    style="padding: var(--space-lg); background-color: var(--light); border-radius: var(--radius-lg);">
+                                    <p
+                                        style="font-size: var(--font-size-sm); color: var(--gray); margin-bottom: var(--space-sm);">
+                                        Email</p>
+                                    <a href="mailto:info@kaizenmedicalsolutions.com"
+                                        style="font-size: var(--font-size-lg); font-weight: 600; color: var(--primary);">info@kaizenmedicalsolutions.com</a>
+                                </div>
+                                <div
+                                    style="padding: var(--space-lg); background-color: var(--light); border-radius: var(--radius-lg);">
+                                    <p
+                                        style="font-size: var(--font-size-sm); color: var(--gray); margin-bottom: var(--space-sm);">
+                                        Horario de atención</p>
+                                    <p style="font-size: var(--font-size-base);">Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer id="footer"></footer>
-
-    <!-- Calendly Script -->
-    <script src="https://assets.calendly.com/assets/external/widget.js"></script>
-
-    <script src="../js/config.js"></script>
-    <script src="../js/components.js"></script>
     <script src="../js/interactions.js"></script>
-    <script src="../js/contacto.js"></script>
 </body>
 
 </html>

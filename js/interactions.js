@@ -57,15 +57,24 @@ document.addEventListener('click', function (e) {
 // Highlighting de link activo en navegación
 function highlightActiveLink() {
     const links = document.querySelectorAll('.nav-link');
-    const currentPath = window.location.pathname;
+    const currentPath = normalizePath(window.location.pathname);
 
     links.forEach(link => {
         const href = link.getAttribute('href');
-        if (currentPath === href || (currentPath === '/' && href === '/')) {
+        if (normalizePath(href) === currentPath) {
             link.style.color = 'var(--primary)';
             link.style.fontWeight = '700';
         }
     });
+}
+
+function normalizePath(path) {
+    try {
+        const url = new URL(path, window.location.href);
+        return url.pathname.replace(/index\.html$/, '').replace(/\/+$/, '/') || '/';
+    } catch (error) {
+        return path;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', highlightActiveLink);

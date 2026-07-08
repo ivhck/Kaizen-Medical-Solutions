@@ -22,10 +22,29 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header id="navbar"></header>
+    <header id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="../">Kaizen Medical</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="recursos.html" class="nav-link">Recursos</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="contacto.html#contacto" class="nav-link nav-cta">Agenda una Consultoría</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- HERO -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -35,46 +54,209 @@
         </div>
     </section>
 
-    <!-- ARTÍCULOS / BLOG -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Últimos Artículos</h2>
-            <div class="grid-3" id="blog-grid"></div>
+            <div class="grid-3" id="blog-grid">
+                <div class="card">
+                    <div
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    </div>
+                    <span
+                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Normativa</span>
+                    <h3 class="card-title">NOM-036 explicada para empresas</h3>
+                    <p class="card-text">Guía completa sobre qué exige la norma de ergonomía y cómo implementarla.</p>
+                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                        2024-01-15</p>
+                    <a href="recursos/nom-036-explicada.html" class="btn btn-primary btn-sm"
+                        style="margin-top: var(--space-md);">Leer más</a>
+                </div>
+                <div class="card">
+                    <div
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    </div>
+                    <span
+                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Financiero</span>
+                    <h3 class="card-title">Cómo reducir la Prima de Riesgo IMSS</h3>
+                    <p class="card-text">Estrategias probadas para disminuir tu Prima de Riesgo sin comprometer la
+                        seguridad.</p>
+                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                        2024-01-10</p>
+                    <a href="recursos/reducir-prima-riesgo.html" class="btn btn-primary btn-sm"
+                        style="margin-top: var(--space-md);">Leer más</a>
+                </div>
+                <div class="card">
+                    <div
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    </div>
+                    <span
+                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Salud</span>
+                    <h3 class="card-title">Diferencia entre enfermedad general y riesgo de trabajo</h3>
+                    <p class="card-text">Clasificación correcta: cuándo una enfermedad es profesional y qué implica
+                        legalmente.</p>
+                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                        2024-01-05</p>
+                    <a href="recursos/enfermedad-vs-riesgo.html" class="btn btn-primary btn-sm"
+                        style="margin-top: var(--space-md);">Leer más</a>
+                </div>
+                <div class="card">
+                    <div
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    </div>
+                    <span
+                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Auditoría</span>
+                    <h3 class="card-title">¿Qué revisa la STPS durante una inspección?</h3>
+                    <p class="card-text">Checklist completo de lo que espera encontrar la STPS y cómo prepararse.</p>
+                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                        2023-12-28</p>
+                    <a href="recursos/stps-inspeccion.html" class="btn btn-primary btn-sm"
+                        style="margin-top: var(--space-md);">Leer más</a>
+                </div>
+                <div class="card">
+                    <div
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    </div>
+                    <span
+                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Ergonomía</span>
+                    <h3 class="card-title">Ergonomía en líneas de producción</h3>
+                    <p class="card-text">Cómo optimizar puestos de trabajo para prevenir lesiones y aumentar
+                        rendimiento.</p>
+                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                        2023-12-20</p>
+                    <a href="recursos/ergonomia-produccion.html" class="btn btn-primary btn-sm"
+                        style="margin-top: var(--space-md);">Leer más</a>
+                </div>
+                <div class="card">
+                    <div
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    </div>
+                    <span
+                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Productividad</span>
+                    <h3 class="card-title">Cómo disminuir el ausentismo laboral</h3>
+                    <p class="card-text">Investigación y estrategias para reducir ausencias y mejorar la asistencia.</p>
+                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                        2023-12-15</p>
+                    <a href="recursos/disminuir-ausentismo.html" class="btn btn-primary btn-sm"
+                        style="margin-top: var(--space-md);">Leer más</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- DESCARGAS -->
     <section class="section section-light">
         <div class="container">
             <h2 class="section-title">Descargas Gratuitas</h2>
-            <div id="downloads-section"></div>
+            <div id="downloads-section">
+                <div class="grid-2" style="gap: var(--space-xl);">
+                    <div class="card">
+                        <h3 class="card-title">📄 Checklist de Seguridad</h3>
+                        <p class="card-text">Descarga gratuita en PDF o Excel</p>
+                        <a href="../assets/downloads/checklist-seguridad.pdf" class="btn btn-primary btn-sm"
+                            download>Descargar</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">📄 Matriz de Riesgos Plantilla</h3>
+                        <p class="card-text">Descarga gratuita en PDF o Excel</p>
+                        <a href="../assets/downloads/matriz-riesgos-plantilla.xlsx" class="btn btn-primary btn-sm"
+                            download>Descargar</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">📄 Guía NOM-035</h3>
+                        <p class="card-text">Descarga gratuita en PDF o Excel</p>
+                        <a href="../assets/downloads/guia-nom-035.pdf" class="btn btn-primary btn-sm"
+                            download>Descargar</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- CASOS DE ÉXITO -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Casos de Éxito</h2>
-            <div class="grid-3" id="cases-grid"></div>
+            <div class="grid-3" id="cases-grid">
+                <div class="card">
+                    <div
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    </div>
+                    <h3 class="card-title">Empresa Manufacturera XYZ</h3>
+                    <p
+                        style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
+                        Manufactura</p>
+                    <div
+                        style="background-color: var(--light); padding: var(--space-md); border-radius: var(--radius-lg); margin-bottom: var(--space-md);">
+                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
+                            <strong>Reto:</strong> Prima de Riesgo elevada y ausentismo recurrente
+                        </p>
+                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
+                            <strong>Resultado:</strong> Reducción del 35% en Prima de Riesgo
+                        </p>
+                        <p style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600;">
+                            <strong>Impacto:</strong> Ahorro anual de $250,000
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    </div>
+                    <h3 class="card-title">Grupo Industrial ABC</h3>
+                    <p
+                        style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
+                        Alimentaria</p>
+                    <div
+                        style="background-color: var(--light); padding: var(--space-md); border-radius: var(--radius-lg); margin-bottom: var(--space-md);">
+                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
+                            <strong>Reto:</strong> Inspección STPS inminente sin preparación
+                        </p>
+                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
+                            <strong>Resultado:</strong> Aprobación sin observaciones
+                        </p>
+                        <p style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600;">
+                            <strong>Impacto:</strong> Cero multas, proceso documentado
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    </div>
+                    <h3 class="card-title">Planta DEF</h3>
+                    <p
+                        style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
+                        Química</p>
+                    <div
+                        style="background-color: var(--light); padding: var(--space-md); border-radius: var(--radius-lg); margin-bottom: var(--space-md);">
+                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
+                            <strong>Reto:</strong> Lesiones frecuentes en línea de envasado
+                        </p>
+                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
+                            <strong>Resultado:</strong> Reducción del 60% en lesiones
+                        </p>
+                        <p style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600;">
+                            <strong>Impacto:</strong> Mejora de productividad y moral de equipo
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- NEWSLETTER -->
     <section class="section section-light">
         <div class="container">
             <div style="max-width: 600px; margin: 0 auto; text-align: center;">
                 <h2 class="section-title">Newsletter Mensual</h2>
                 <p style="margin-bottom: var(--space-lg);">Recibe actualizaciones normativas, artículos y mejores
                     prácticas directamente en tu correo.</p>
-                <form style="display: flex; gap: var(--space-sm);">
-                    <input type="email" placeholder="Tu correo electrónico" class="form-control" required>
+                <form style="display: flex; gap: var(--space-sm);" action="mailto:info@kaizenmedicalsolutions.com"
+                    method="post" enctype="text/plain">
+                    <input type="email" name="email" placeholder="Tu correo electrónico" class="form-control" required>
                     <button type="submit" class="btn btn-primary">Suscribirse</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
     <section class="section">
         <div class="container">
             <div class="cta-section">
@@ -84,13 +266,66 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="../assets/images/Logo_Kaizen_white.png" alt="Kaizen Medical Solutions"
+                        class="footer-logo">
+                    <p>Soluciones de Salud Ocupacional para una Industria más Productiva y Rentable</p>
+                    <ul class="social-links">
+                        <li><a href="#facebook" title="Facebook" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#linkedin" title="LinkedIn" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#youtube" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="../">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="recursos.html">Recursos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-phone"></i> Contacto</h4>
+                    <ul>
+                        <li><a href="tel:+52 (XX) XXXX-XXXX"><i class="fas fa-phone-alt"></i> +52 (XX) XXXX-XXXX</a>
+                        </li>
+                        <li><a href="mailto:info@kaizenmedicalsolutions.com"><i class="fas fa-envelope"></i>
+                                info@kaizenmedicalsolutions.com</a></li>
+                        <li>
+                            <p><i class="fas fa-map-marker-alt"></i> Dirección de la empresa</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-book"></i> Recursos</h4>
+                    <ul>
+                        <li><a href="recursos.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="recursos.html"><i class="fas fa-download"></i> Descargas</a></li>
+                        <li><a href="#"><i class="fas fa-envelope-open"></i> Newsletter</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-shield-alt"></i> Aviso de Privacidad</a>
+                    <a href="#"><i class="fas fa-cookie"></i> Política de Cookies</a>
+                    <a href="#"><i class="fas fa-file-contract"></i> Términos de Servicio</a>
+                </div>
+                <p><i class="fas fa-copyright"></i> 2024 Kaizen Medical Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-    <script src="../js/config.js"></script>
-    <script src="../js/components.js"></script>
     <script src="../js/interactions.js"></script>
-    <script src="../js/recursos.js"></script>
 </body>
 
 </html>

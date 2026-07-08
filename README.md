@@ -15,22 +15,9 @@ Soluciones de Salud Ocupacional para una Industria más Productiva y Rentable.
 ├── css/
 │   └── styles.css               # Estilos principales (paleta de colores, componentes)
 ├── js/
-│   ├── config.js                # Configuración global
-│   ├── components.js            # Componentes reutilizables (navbar, footer)
-│   ├── home.js                  # Lógica página inicio
-│   ├── servicios.js             # Lógica página servicios
-│   ├── about.js                 # Lógica página nosotros
-│   ├── recursos.js              # Lógica página recursos
-│   └── contacto.js              # Lógica página contacto
-├── data/
-│   ├── config.json              # Configuración del sitio
-│   ├── home.json                # Contenido página inicio
-│   ├── servicios.json           # Catálogo de servicios
-│   ├── about.json               # Información empresa
-│   ├── recursos.json            # Artículos, casos, descargas
-│   └── contacto.json            # Información contacto
+│   └── interactions.js          # Menú móvil, scroll reveal y utilidades visuales
 ├── assets/
-│   ├── images/                  # Imágenes (hero, servicios, etc)
+│   ├── images/                  # Imágenes (hero, logo, blog, casos)
 │   ├── icons/                   # Iconografía
 │   └── downloads/               # PDFs y descargas
 └── README.md                    # Este archivo
@@ -46,26 +33,6 @@ Soluciones de Salud Ocupacional para una Industria más Productiva y Rentable.
 - **Claro**: `#F4F7FB` - Fondos alternativos
 - **Blanco**: `#FFFFFF` - Fondo principal
 
-## 📄 Archivos JSON
-
-### config.json
-Configuración global del sitio (nombre, colores, navegación, etc)
-
-### home.json
-Contenido de la página de inicio (hero, problemas, servicios, CTA)
-
-### servicios.json
-Catálogo de 5 servicios con descripción, problemas, alcance, entregables y beneficios
-
-### about.json
-Información sobre la empresa (misión, visión, valores, diferencial)
-
-### recursos.json
-Centro de recursos (artículos, descargas, casos de éxito)
-
-### contacto.json
-Información de contacto y configuración de formulario
-
 ## ⚙️ Funcionalidades Implementadas
 
 ✅ Navegación responsiva con menú móvil
@@ -74,10 +41,10 @@ Información de contacto y configuración de formulario
 ✅ Página de servicios detallada
 ✅ Página sobre nosotros con misión/visión
 ✅ Centro de recursos con blog, descargas, casos
-✅ Página de contacto con formulario + Calendly
+✅ Página de contacto con formulario de correo y datos de agendamiento
 ✅ Footer con enlaces y redes sociales
 ✅ Diseño completamente responsivo
-✅ Carga dinámica de contenido desde JSON
+✅ Sitio completamente estático en HTML
 
 ## 🚀 Cómo Usar
 
@@ -106,16 +73,10 @@ Instala la extensión "Live Server" y usa "Go Live"
 Edita `/css/styles.css` - Variables CSS en `:root`
 
 ### Cambiar Contenido
-Edita los archivos JSON en `/data/` sin necesidad de modificar HTML/JS
+Edita directamente los archivos HTML dentro de `/` y `/pages/`
 
 ### Agregar Calendly
-En `/data/contacto.json`, actualiza la URL de Calendly:
-```json
-"calendly": {
-  "username": "tu-username",
-  "embed_url": "https://calendly.com/tu-username/15min"
-}
-```
+Edita el bloque de contacto en `pages/contacto.html` y reemplaza el texto o enlace por tu URL real de Calendly.
 
 ### Agregar Imágenes
 Coloca imágenes en `/assets/images/` y referéncialas en los JSON
@@ -136,27 +97,25 @@ Coloca imágenes en `/assets/images/` y referéncialas en los JSON
 
 ## 📞 Integraciones
 
-- **Formulario**: Captura de datos en tiempo real
-- **Calendly**: Agendamiento automático integrado
+- **Formulario**: Envío por correo mediante `mailto:`
+- **Calendly**: Enlace opcional para agendamiento
 - **Redes Sociales**: Enlaces en footer
 
 ## 📊 Siguientes Pasos
 
 1. **Agregar imágenes reales** en `/assets/images/`
 2. **Configurar Calendly** con URL real
-3. **Configurar destino de formulario** (emailjs, backend, etc)
-4. **Crear página de cada servicio** individual (opcional)
-5. **Agregar artículos del blog** en recursos
-6. **Implementar Google Analytics**
-7. **Obtener certificado SSL**
-8. **Deploy** a hosting
+3. **Configurar destino de formulario** si prefieres backend en lugar de `mailto:`
+4. **Crear páginas adicionales** para servicios o artículos nuevos
+5. **Agregar Google Analytics** si lo necesitas
+6. **Deploy** a hosting
 
 ## 🛠 Tecnologías
 
 - HTML5 semántico
 - CSS3 (variables, flexbox, grid)
 - JavaScript vanilla (sin frameworks)
-- JSON para contenido dinámico
+- HTML estático sin CMS
 - Responsive design mobile-first
 
 ## 📜 Licencia
