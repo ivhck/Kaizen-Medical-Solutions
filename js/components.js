@@ -2,16 +2,16 @@
 
 // Función para renderizar el header
 function renderNavbar() {
-    const navbar = document.getElementById('navbar');
-    if (!navbar) return;
+  const navbar = document.getElementById('navbar');
+  if (!navbar) return;
 
-    const logoSrc = config.site?.logo || '/assets/images/Logo_Kaizen.png';
+  const logoSrc = resolveSitePath(config.site?.logo || 'assets/images/Logo_Kaizen.png');
 
-    navbar.innerHTML = `
+  navbar.innerHTML = `
     <div class="container">
       <nav class="navbar">
         <div class="navbar-brand">
-          <a href="/">
+          <a href="${resolveSitePath('./')}">
             <img src="${logoSrc}" alt="Kaizen Medical Solutions" class="navbar-logo">
           </a>
         </div>
@@ -21,37 +21,37 @@ function renderNavbar() {
           <span></span>
         </button>
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="/" class="nav-link">Inicio</a></li>
-          <li><a href="/pages/servicios.html" class="nav-link">Servicios</a></li>
-          <li><a href="/pages/nosotros.html" class="nav-link">Nosotros</a></li>
-          <li><a href="/pages/recursos.html" class="nav-link">Recursos</a></li>
-          <li><a href="/pages/contacto.html" class="nav-link">Contacto</a></li>
-          <li><a href="/pages/contacto.html" class="nav-link nav-cta">Agenda una Consultoría</a></li>
+          <li><a href="${resolveSitePath('./')}" class="nav-link">Inicio</a></li>
+          <li><a href="${resolveSitePath('pages/servicios.html')}" class="nav-link">Servicios</a></li>
+          <li><a href="${resolveSitePath('pages/nosotros.html')}" class="nav-link">Nosotros</a></li>
+          <li><a href="${resolveSitePath('pages/recursos.html')}" class="nav-link">Recursos</a></li>
+          <li><a href="${resolveSitePath('pages/contacto.html')}" class="nav-link">Contacto</a></li>
+          <li><a href="${resolveSitePath('pages/contacto.html')}" class="nav-link nav-cta">Agenda una Consultoría</a></li>
         </ul>
       </nav>
     </div>
   `;
 
-    // Toggle mobile menu
-    const toggle = document.getElementById('mobile-toggle');
-    const menu = document.getElementById('nav-menu');
-    if (toggle) {
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    }
+  // Toggle mobile menu
+  const toggle = document.getElementById('mobile-toggle');
+  const menu = document.getElementById('nav-menu');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  }
 }
 
 // Función para renderizar el footer
 function renderFooter() {
-    const footer = document.getElementById('footer');
-    if (!footer || !config.site) return;
+  const footer = document.getElementById('footer');
+  if (!footer || !config.site) return;
 
-    footer.innerHTML = `
+  footer.innerHTML = `
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <img src="/assets/images/Logo_Kaizen_white.png" alt="Kaizen Medical Solutions" class="footer-logo">
+          <img src="${resolveSitePath('assets/images/Logo_Kaizen_white.png')}" alt="Kaizen Medical Solutions" class="footer-logo">
           <p>${config.site.description}</p>
           <ul class="social-links">
             <li><a href="#facebook" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
@@ -62,11 +62,11 @@ function renderFooter() {
         <div class="footer-section">
           <h4>Navegación</h4>
           <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/pages/servicios.html">Servicios</a></li>
-            <li><a href="/pages/nosotros.html">Nosotros</a></li>
-            <li><a href="/pages/recursos.html">Recursos</a></li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="${resolveSitePath('./')}">Inicio</a></li>
+            <li><a href="${resolveSitePath('pages/servicios.html')}">Servicios</a></li>
+            <li><a href="${resolveSitePath('pages/nosotros.html')}">Nosotros</a></li>
+            <li><a href="${resolveSitePath('pages/recursos.html')}">Recursos</a></li>
+            <li><a href="${resolveSitePath('pages/contacto.html')}">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -80,8 +80,8 @@ function renderFooter() {
         <div class="footer-section">
           <h4><i class="fas fa-book"></i> Recursos</h4>
           <ul>
-            <li><a href="/pages/recursos.html"><i class="fas fa-blog"></i> Blog</a></li>
-            <li><a href="/pages/recursos.html"><i class="fas fa-download"></i> Descargas</a></li>
+            <li><a href="${resolveSitePath('pages/recursos.html')}"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="${resolveSitePath('pages/recursos.html')}"><i class="fas fa-download"></i> Descargas</a></li>
             <li><a href="#"><i class="fas fa-envelope-open"></i> Newsletter</a></li>
             <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
           </ul>
@@ -101,10 +101,10 @@ function renderFooter() {
 
 // Inicializar componentes cuando el config está listo
 function initComponents() {
-    setTimeout(() => {
-        renderNavbar();
-        renderFooter();
-    }, 100);
+  setTimeout(() => {
+    renderNavbar();
+    renderFooter();
+  }, 100);
 }
 
 document.addEventListener('DOMContentLoaded', initComponents);

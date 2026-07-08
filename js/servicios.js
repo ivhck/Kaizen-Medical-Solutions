@@ -1,27 +1,27 @@
 // servicios.js - Lógica de la página de servicios
 
 document.addEventListener('DOMContentLoaded', function () {
-    const waitForData = setInterval(() => {
-        if (serviciosData && serviciosData.servicios) {
-            clearInterval(waitForData);
-            renderServicios();
-        }
-    }, 100);
+  const waitForData = setInterval(() => {
+    if (serviciosData && serviciosData.servicios) {
+      clearInterval(waitForData);
+      renderServicios();
+    }
+  }, 100);
 });
 
 function renderServicios() {
-    const servicesDetail = document.getElementById('services-detail');
-    if (!servicesDetail || !serviciosData.servicios) return;
+  const servicesDetail = document.getElementById('services-detail');
+  if (!servicesDetail || !serviciosData.servicios) return;
 
-    servicesDetail.innerHTML = serviciosData.servicios
-        .map((service, index) => `
+  servicesDetail.innerHTML = serviciosData.servicios
+    .map((service, index) => `
       <div id="${service.id}" style="margin-bottom: var(--space-3xl); padding-bottom: var(--space-3xl); border-bottom: ${index < serviciosData.servicios.length - 1 ? '1px solid var(--gray-light)' : 'none'};">
         <!-- Hero del servicio -->
         <div style="margin-bottom: var(--space-2xl);">
           <h2 class="text-primary" style="margin-bottom: var(--space-sm);">${service.title}</h2>
           <p style="font-size: var(--font-size-lg); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">${service.subtitle}</p>
           <p style="font-size: var(--font-size-lg); color: var(--gray); margin-bottom: var(--space-lg);">${service.description}</p>
-          <a href="/pages/contacto.html" class="btn btn-primary">Agenda una consultoría</a>
+          <a href="${resolveSitePath('pages/contacto.html')}" class="btn btn-primary">Agenda una consultoría</a>
         </div>
 
         <!-- Grid de contenido -->
@@ -75,9 +75,9 @@ function renderServicios() {
         <!-- CTA -->
         <div class="cta-section" style="margin-top: var(--space-2xl);">
           <h3>¿Interesado en este servicio?</h3>
-          <a href="/pages/contacto.html" class="btn btn-secondary btn-lg">Solicitar evaluación</a>
+          <a href="${resolveSitePath('pages/contacto.html')}" class="btn btn-secondary btn-lg">Solicitar evaluación</a>
         </div>
       </div>
     `)
-        .join('');
+    .join('');
 }

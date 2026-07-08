@@ -7,8 +7,8 @@
             "category": "Normativa",
             "date": "2024-01-15",
             "author": "Kaizen Medical",
-            "image": "/assets/images/blog/nom-036.jpg",
-            "url": "/pages/recursos/nom-036-explicada.html"
+            "image": "assets/images/blog/nom-036.jpg",
+            "url": "pages/recursos/nom-036-explicada.html"
         },
         {
             "id": "reducir-prima-riesgo",
@@ -17,8 +17,8 @@
             "category": "Financiero",
             "date": "2024-01-10",
             "author": "Kaizen Medical",
-            "image": "/assets/images/blog/prima-imss.jpg",
-            "url": "/pages/recursos/reducir-prima-riesgo.html"
+            "image": "assets/images/blog/prima-imss.jpg",
+            "url": "pages/recursos/reducir-prima-riesgo.html"
         },
         {
             "id": "enfermedad-general-riesgo-trabajo",
@@ -27,8 +27,8 @@
             "category": "Salud",
             "date": "2024-01-05",
             "author": "Kaizen Medical",
-            "image": "/assets/images/blog/clasificacion.jpg",
-            "url": "/pages/recursos/enfermedad-vs-riesgo.html"
+            "image": "assets/images/blog/clasificacion.jpg",
+            "url": "pages/recursos/enfermedad-vs-riesgo.html"
         },
         {
             "id": "que-revisa-stps",
@@ -37,8 +37,8 @@
             "category": "Auditoría",
             "date": "2023-12-28",
             "author": "Kaizen Medical",
-            "image": "/assets/images/blog/stps-inspeccion.jpg",
-            "url": "/pages/recursos/stps-inspeccion.html"
+            "image": "assets/images/blog/stps-inspeccion.jpg",
+            "url": "pages/recursos/stps-inspeccion.html"
         },
         {
             "id": "ergonomia-produccion",
@@ -47,8 +47,8 @@
             "category": "Ergonomía",
             "date": "2023-12-20",
             "author": "Kaizen Medical",
-            "image": "/assets/images/blog/ergonomia-linea.jpg",
-            "url": "/pages/recursos/ergonomia-produccion.html"
+            "image": "assets/images/blog/ergonomia-linea.jpg",
+            "url": "pages/recursos/ergonomia-produccion.html"
         },
         {
             "id": "disminuir-ausentismo",
@@ -57,8 +57,8 @@
             "category": "Productividad",
             "date": "2023-12-15",
             "author": "Kaizen Medical",
-            "image": "/assets/images/blog/ausentismo.jpg",
-            "url": "/pages/recursos/disminuir-ausentismo.html"
+            "image": "assets/images/blog/ausentismo.jpg",
+            "url": "pages/recursos/disminuir-ausentismo.html"
         }
     ],
     "resources": {
@@ -98,7 +98,7 @@
             "challenge": "Prima de Riesgo elevada y ausentismo recurrente",
             "result": "Reducción del 35% en Prima de Riesgo",
             "impact": "Ahorro anual de $250,000",
-            "image": "/assets/images/cases/case-1.jpg"
+            "image": "assets/images/cases/case-1.jpg"
         },
         {
             "id": "caso-2",
@@ -107,7 +107,7 @@
             "challenge": "Inspección STPS inminente sin preparación",
             "result": "Aprobación sin observaciones",
             "impact": "Cero multas, proceso documentado",
-            "image": "/assets/images/cases/case-2.jpg"
+            "image": "assets/images/cases/case-2.jpg"
         },
         {
             "id": "caso-3",
@@ -116,7 +116,7 @@
             "challenge": "Lesiones frecuentes en línea de envasado",
             "result": "Reducción del 60% en lesiones",
             "impact": "Mejora de productividad y moral de equipo",
-            "image": "/assets/images/cases/case-3.jpg"
+            "image": "assets/images/cases/case-3.jpg"
         }
     ]
 }
