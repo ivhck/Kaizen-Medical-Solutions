@@ -26,7 +26,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="navbar-brand">
-                    <a href="../"><img src="../assets/images/Logo_Kaizen.png" alt="Kaizen Medical Solutions"
+                    <a href="../index.html"><img src="../assets/images/Logo_Kaizen.png" alt="Kaizen Medical Solutions"
                             class="navbar-logo"></a>
                 </div>
                 <button class="mobile-menu-toggle" id="mobile-toggle">
@@ -35,7 +35,7 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="../" class="nav-link">Inicio</a></li>
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
                     <li><a href="servicios.html" class="nav-link">Servicios</a></li>
                     <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
                     <li><a href="recursos.html" class="nav-link">Recursos</a></li>
@@ -46,22 +46,80 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero hero-split">
         <div class="container">
-            <div class="hero-content">
-                <h1>Contacto</h1>
-                <p>Cuéntanos cómo podemos ayudarte a optimizar tu salud ocupacional</p>
+            <div class="page-hero-shell">
+                <div class="page-hero-copy" data-reveal>
+                    <div class="page-eyebrow"><i class="fa-solid fa-comments"></i> Contacto</div>
+                    <h1>Hablemos de tu operación</h1>
+                    <p>Cuéntanos qué está frenando a tu equipo y te ayudamos a aterrizar una ruta de trabajo clara,
+                        breve y efectiva.</p>
+                    <div class="page-actions">
+                        <a href="#contacto" class="btn btn-secondary btn-lg"><i class="fa-solid fa-envelope"></i>
+                            Escribir ahora</a>
+                        <a href="tel:+52 (XX) XXXX-XXXX" class="btn btn-outline btn-lg"><i
+                                class="fa-solid fa-phone"></i> Llamar</a>
+                    </div>
+                </div>
+                <div class="page-visual" data-reveal>
+                    <div class="page-image glass-panel">
+                        <img data-parallax="true" data-parallax-speed="0.05"
+                            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=80"
+                            alt="Consultoría profesional y atención personalizada">
+                    </div>
+                    <div class="page-floating-card" data-parallax="true" data-parallax-speed="0.03">
+                        <strong><i class="fa-solid fa-clock"></i> Respuesta ágil</strong>
+                        <span>Sesión inicial para entender tu caso sin perder tiempo.</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="contacto">
+    <section class="section section-light" id="contacto">
         <div class="container">
-            <div class="grid-2" style="gap: var(--space-2xl);">
+            <div class="contact-grid">
+                <div class="contact-card" data-reveal>
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Canales directos</h3>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-phone"></i><span><a href="tel:+52 (XX) XXXX-XXXX">+52 (XX)
+                                    XXXX-XXXX</a></span></li>
+                        <li><i class="fa-solid fa-envelope"></i><span><a
+                                    href="mailto:info@kaizenmedicalsolutions.com">info@kaizenmedicalsolutions.com</a></span>
+                        </li>
+                        <li><i class="fa-solid fa-clock"></i><span>Lunes a Viernes, 8:00 AM - 6:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="contact-card" data-reveal>
+                    <div class="contact-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h3>Agenda tu consultoría</h3>
+                    <p>Sesión de 15 minutos para revisar tu contexto, detectar prioridades y definir el siguiente paso.
+                    </p>
+                    <a href="mailto:info@kaizenmedicalsolutions.com" class="btn btn-primary btn-sm">Escribir por
+                        correo</a>
+                </div>
+
+                <div class="contact-card" data-reveal>
+                    <div class="contact-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h3>Qué puedes contarnos</h3>
+                    <p>Ausentismo, auditorías, ergonomía, capacitación, prima de riesgo o una combinación de estos
+                        frentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-split">
                 <div>
-                    <h2 class="text-primary mb-lg">Envíanos un mensaje</h2>
-                    <form id="contact-form" class="contact-form" action="mailto:info@kaizenmedicalsolutions.com"
-                        method="post" enctype="text/plain">
+                    <h2 class="section-title" style="text-align:left; width:auto; margin-bottom: var(--space-lg);">
+                        Envíanos un mensaje</h2>
+                    <form id="contact-form" class="contact-form glass-panel"
+                        action="mailto:info@kaizenmedicalsolutions.com" method="post" enctype="text/plain"
+                        style="padding: var(--space-xl);">
                         <div class="form-group">
                             <label for="nombre" class="form-label">Nombre Completo *</label>
                             <input type="text" id="nombre" name="nombre" class="form-control" required>
@@ -93,58 +151,40 @@
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
                     </form>
-                    <div id="form-message"
-                        style="margin-top: var(--space-lg); display: block; background-color: #eaf4ff; color: var(--primary); padding: var(--space-md); border-radius: var(--radius-lg);">
+                    <div id="form-message" class="glass-panel"
+                        style="margin-top: var(--space-lg); padding: var(--space-md); color: var(--primary);">
                         El formulario abre tu correo para enviar el mensaje a info@kaizenmedicalsolutions.com.
                     </div>
                 </div>
 
                 <div>
-                    <h2 class="text-primary mb-lg">Agenda tu consultoría</h2>
-                    <p style="margin-bottom: var(--space-xl); font-size: var(--font-size-lg);">
-                        Sesión de 15 minutos para analizar tu situación específica.
-                    </p>
+                    <h2 class="section-title" style="text-align:left; width:auto; margin-bottom: var(--space-lg);">
+                        Agenda tu consultoría</h2>
+                    <p style="margin-bottom: var(--space-xl); font-size: var(--font-size-lg);">Sesión corta para
+                        analizar tu situación específica y decirte qué resolver primero.</p>
 
-                    <div id="calendly-embed" class="card"
+                    <div id="calendly-embed" class="glass-panel"
                         style="padding: var(--space-xl); margin-bottom: var(--space-2xl);">
-                        <h3 class="card-title">Agenda rápida</h3>
-                        <p class="card-text">Si ya tienes un enlace de Calendly, puedes insertarlo aquí. Mientras tanto,
-                            usa el correo o teléfono de contacto.</p>
+                        <div class="section-kicker"><i class="fa-solid fa-calendar-days"></i> Agenda rápida</div>
+                        <h3 class="card-title">Ponemos orden al siguiente paso</h3>
+                        <p class="card-text">Si tienes un enlace de Calendly, puedes insertarlo aquí. Mientras tanto,
+                            usa correo o teléfono.</p>
                         <a href="mailto:info@kaizenmedicalsolutions.com" class="btn btn-primary btn-sm">Escribir por
                             correo</a>
                     </div>
 
-                    <div
-                        style="margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--gray-light);">
-                        <h3 class="text-primary mb-lg">Información de Contacto</h3>
-                        <div id="contact-info">
-                            <div style="display: flex; flex-direction: column; gap: var(--space-lg);">
-                                <div
-                                    style="padding: var(--space-lg); background-color: var(--light); border-radius: var(--radius-lg);">
-                                    <p
-                                        style="font-size: var(--font-size-sm); color: var(--gray); margin-bottom: var(--space-sm);">
-                                        Teléfono</p>
-                                    <a href="tel:+52 (XX) XXXX-XXXX"
-                                        style="font-size: var(--font-size-lg); font-weight: 600; color: var(--primary);">+52
-                                        (XX) XXXX-XXXX</a>
-                                </div>
-                                <div
-                                    style="padding: var(--space-lg); background-color: var(--light); border-radius: var(--radius-lg);">
-                                    <p
-                                        style="font-size: var(--font-size-sm); color: var(--gray); margin-bottom: var(--space-sm);">
-                                        Email</p>
-                                    <a href="mailto:info@kaizenmedicalsolutions.com"
-                                        style="font-size: var(--font-size-lg); font-weight: 600; color: var(--primary);">info@kaizenmedicalsolutions.com</a>
-                                </div>
-                                <div
-                                    style="padding: var(--space-lg); background-color: var(--light); border-radius: var(--radius-lg);">
-                                    <p
-                                        style="font-size: var(--font-size-sm); color: var(--gray); margin-bottom: var(--space-sm);">
-                                        Horario de atención</p>
-                                    <p style="font-size: var(--font-size-base);">Lunes a Viernes, 8:00 AM - 6:00 PM</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="contact-card" data-reveal>
+                        <div class="contact-icon"><i class="fa-solid fa-circle-info"></i></div>
+                        <h3>Información de contacto</h3>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-phone"></i><span><a href="tel:+52 (XX) XXXX-XXXX">+52 (XX)
+                                        XXXX-XXXX</a></span></li>
+                            <li><i class="fa-solid fa-envelope"></i><span><a
+                                        href="mailto:info@kaizenmedicalsolutions.com">info@kaizenmedicalsolutions.com</a></span>
+                            </li>
+                            <li><i class="fa-solid fa-business-time"></i><span>Lunes a Viernes, 8:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

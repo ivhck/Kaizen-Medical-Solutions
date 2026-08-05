@@ -26,7 +26,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="navbar-brand">
-                    <a href="../"><img src="../assets/images/Logo_Kaizen.png" alt="Kaizen Medical Solutions"
+                    <a href="../index.html"><img src="../assets/images/Logo_Kaizen.png" alt="Kaizen Medical Solutions"
                             class="navbar-logo"></a>
                 </div>
                 <button class="mobile-menu-toggle" id="mobile-toggle">
@@ -35,7 +35,7 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="../" class="nav-link">Inicio</a></li>
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
                     <li><a href="servicios.html" class="nav-link">Servicios</a></li>
                     <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
                     <li><a href="recursos.html" class="nav-link">Recursos</a></li>
@@ -46,28 +46,31 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero hero-split">
         <div class="container">
-            <div class="hero-content">
-                <h1>Sobre Nosotros</h1>
-                <p>Transformando la salud ocupacional en ventaja competitiva</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="grid-2">
-                <div>
-                    <h2 class="text-primary">Nuestra Misión</h2>
-                    <p style="font-size: var(--font-size-lg); line-height: 1.8;">Ayudar a las empresas industriales a
-                        proteger su capital humano mediante soluciones médicas, normativas y financieras que convierten
-                        el cumplimiento en productividad.</p>
+            <div class="page-hero-shell">
+                <div class="page-hero-copy" data-reveal>
+                    <div class="page-eyebrow"><i class="fa-solid fa-building-circle-check"></i> Quiénes somos</div>
+                    <h1>Sobre Nosotros</h1>
+                    <p>Transformamos la salud ocupacional en una ventaja competitiva clara, medible y profesional para
+                        entornos industriales.</p>
+                    <div class="page-actions">
+                        <a href="contacto.html" class="btn btn-secondary btn-lg"><i
+                                class="fa-solid fa-calendar-check"></i> Agenda una consultoría</a>
+                        <a href="servicios.html" class="btn btn-outline btn-lg"><i class="fa-solid fa-briefcase"></i>
+                            Ver servicios</a>
+                    </div>
                 </div>
-                <div>
-                    <h2 class="text-primary">Nuestra Visión</h2>
-                    <p style="font-size: var(--font-size-lg); line-height: 1.8;">Ser el aliado estratégico de la
-                        industria en salud ocupacional, transformando riesgos en oportunidades de crecimiento.</p>
+                <div class="page-visual" data-reveal>
+                    <div class="page-image glass-panel">
+                        <img data-parallax="true" data-parallax-speed="0.06"
+                            src="https://images.unsplash.com/photo-1573164574395-5405ba0c2c8f?auto=format&fit=crop&w=1400&q=80"
+                            alt="Equipo profesional de salud ocupacional">
+                    </div>
+                    <div class="page-floating-card" data-parallax="true" data-parallax-speed="0.03">
+                        <strong><i class="fa-solid fa-people-group"></i> Equipo cercano</strong>
+                        <span>Comunicación ejecutiva, criterio técnico y acompañamiento real.</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,27 +78,21 @@
 
     <section class="section section-light">
         <div class="container">
-            <h2 class="section-title">Nuestros Valores</h2>
-            <div class="value-cards" id="values-cards">
-                <div class="value-card">
-                    <h3>Profesionalismo</h3>
-                    <p>Excelencia en cada proyecto, con equipo certificado y actualizado.</p>
+            <div class="section-split">
+                <div data-reveal>
+                    <div class="section-kicker"><i class="fa-solid fa-bullseye"></i> Misión</div>
+                    <h2 class="section-title" style="text-align:left; width:auto; margin-bottom: var(--space-lg);">
+                        Nuestra Misión</h2>
+                    <p style="font-size: var(--font-size-lg); line-height: 1.8;">Ayudar a las empresas industriales a
+                        proteger su capital humano mediante soluciones médicas, normativas y financieras que convierten
+                        el cumplimiento en productividad.</p>
                 </div>
-                <div class="value-card">
-                    <h3>Ética</h3>
-                    <p>Transparencia y responsabilidad en nuestras recomendaciones.</p>
-                </div>
-                <div class="value-card">
-                    <h3>Evidencia Científica</h3>
-                    <p>Decisiones basadas en datos y metodologías reconocidas internacionalmente.</p>
-                </div>
-                <div class="value-card">
-                    <h3>Prevención</h3>
-                    <p>Enfoque proactivo para evitar accidentes y enfermedades laborales.</p>
-                </div>
-                <div class="value-card">
-                    <h3>Innovación</h3>
-                    <p>Soluciones actualizadas con tecnología y mejores prácticas globales.</p>
+                <div data-reveal>
+                    <div class="section-kicker"><i class="fa-solid fa-eye"></i> Visión</div>
+                    <h2 class="section-title" style="text-align:left; width:auto; margin-bottom: var(--space-lg);">
+                        Nuestra Visión</h2>
+                    <p style="font-size: var(--font-size-lg); line-height: 1.8;">Ser el aliado estratégico de la
+                        industria en salud ocupacional, transformando riesgos en oportunidades de crecimiento.</p>
                 </div>
             </div>
         </div>
@@ -103,31 +100,68 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Nuestro Diferencial</h2>
-            <div style="max-width: 800px; margin: 0 auto;">
-                <ul id="differential-list"
-                    style="list-style: none; display: flex; flex-direction: column; gap: var(--space-lg);">
-                    <li
-                        style="padding: var(--space-md); background-color: var(--light); border-radius: var(--radius-lg); border-left: 4px solid var(--accent);">
-                        <strong>No solo realizamos estudios: ayudamos a que tu empresa reduzca costos</strong>
-                    </li>
-                    <li
-                        style="padding: var(--space-md); background-color: var(--light); border-radius: var(--radius-lg); border-left: 4px solid var(--accent);">
-                        <strong>Mejoramos productividad mediante ambientes de trabajo seguros</strong>
-                    </li>
-                    <li
-                        style="padding: var(--space-md); background-color: var(--light); border-radius: var(--radius-lg); border-left: 4px solid var(--accent);">
-                        <strong>Garantizamos cumplimiento con legislación mexicana e internacional</strong>
-                    </li>
-                    <li
-                        style="padding: var(--space-md); background-color: var(--light); border-radius: var(--radius-lg); border-left: 4px solid var(--accent);">
-                        <strong>Disminuimos riesgos financieros derivados de siniestralidad</strong>
-                    </li>
-                    <li
-                        style="padding: var(--space-md); background-color: var(--light); border-radius: var(--radius-lg); border-left: 4px solid var(--accent);">
-                        <strong>Transformamos la salud ocupacional en ventaja competitiva</strong>
-                    </li>
-                </ul>
+            <div class="section-kicker" style="justify-content:center;"><i class="fa-solid fa-gem"></i> Nuestros valores
+            </div>
+            <h2 class="section-title">Una forma de trabajar seria, clara y consistente</h2>
+            <div class="value-cards" id="values-cards">
+                <div class="value-card" data-reveal>
+                    <div class="feature-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Profesionalismo</h3>
+                    <p>Excelencia en cada proyecto, con equipo certificado y actualizado.</p>
+                </div>
+                <div class="value-card" data-reveal>
+                    <div class="feature-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3>Ética</h3>
+                    <p>Transparencia y responsabilidad en nuestras recomendaciones.</p>
+                </div>
+                <div class="value-card" data-reveal>
+                    <div class="feature-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <h3>Evidencia Científica</h3>
+                    <p>Decisiones basadas en datos y metodologías reconocidas internacionalmente.</p>
+                </div>
+                <div class="value-card" data-reveal>
+                    <div class="feature-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h3>Prevención</h3>
+                    <p>Enfoque proactivo para evitar accidentes y enfermedades laborales.</p>
+                </div>
+                <div class="value-card" data-reveal>
+                    <div class="feature-icon"><i class="fa-solid fa-sparkles"></i></div>
+                    <h3>Innovación</h3>
+                    <p>Soluciones actualizadas con tecnología y mejores prácticas globales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-split reverse">
+                <div class="section-image-slab" data-reveal>
+                    <img data-parallax="true" data-parallax-speed="0.05"
+                        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=80"
+                        alt="Equipo colaborando en un entorno profesional">
+                    <div class="overlay">
+                        <strong><i class="fa-solid fa-arrow-trend-up"></i> Diferencial medible</strong>
+                        <p>Menos fricción operativa, mejor cumplimiento y un discurso más sólido para dirección.</p>
+                    </div>
+                </div>
+                <div data-reveal>
+                    <div class="section-kicker"><i class="fa-solid fa-bolt"></i> Diferencial</div>
+                    <h2 class="section-title" style="text-align:left; width:auto; margin-bottom: var(--space-lg);">
+                        Nuestro Diferencial</h2>
+                    <ul class="feature-list" id="differential-list">
+                        <li><i class="fa-solid fa-circle-check"></i><span>No solo realizamos estudios: ayudamos a que tu
+                                empresa reduzca costos.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Mejoramos productividad mediante ambientes de
+                                trabajo seguros.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Garantizamos cumplimiento con legislación
+                                mexicana e internacional.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Disminuimos riesgos financieros derivados de
+                                siniestralidad.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Transformamos la salud ocupacional en ventaja
+                                competitiva.</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -136,7 +170,10 @@
         <div class="container">
             <div class="cta-section">
                 <h2>¿Listo para transformar la salud ocupacional en tu empresa?</h2>
-                <a href="contacto.html" class="btn btn-secondary btn-lg">Agenda una Consultoría</a>
+                <p>Trabajamos con una visión práctica: resolver, documentar y sostener mejoras que sí se pueden operar.
+                </p>
+                <a href="contacto.html" class="btn btn-secondary btn-lg"><i class="fa-solid fa-calendar-days"></i>
+                    Agenda una consultoría</a>
             </div>
         </div>
     </section>
@@ -160,7 +197,7 @@
                 <div class="footer-section">
                     <h4>Navegación</h4>
                     <ul>
-                        <li><a href="../">Inicio</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="recursos.html">Recursos</a></li>

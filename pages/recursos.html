@@ -9,13 +9,11 @@
 
     <title>Recursos - Kaizen Medical Solutions</title>
 
-    <!-- Google Fonts - Tipografía moderna -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/animations.css">
@@ -26,7 +24,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="navbar-brand">
-                    <a href="../"><img src="../assets/images/Logo_Kaizen.png" alt="Kaizen Medical Solutions"
+                    <a href="../index.html"><img src="../assets/images/Logo_Kaizen.png" alt="Kaizen Medical Solutions"
                             class="navbar-logo"></a>
                 </div>
                 <button class="mobile-menu-toggle" id="mobile-toggle">
@@ -35,7 +33,7 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="../" class="nav-link">Inicio</a></li>
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
                     <li><a href="servicios.html" class="nav-link">Servicios</a></li>
                     <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
                     <li><a href="recursos.html" class="nav-link">Recursos</a></li>
@@ -46,124 +44,176 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero hero-split">
         <div class="container">
-            <div class="hero-content">
-                <h1>Centro de Recursos</h1>
-                <p>Información, artículos, descargas y casos de éxito para optimizar tu salud ocupacional</p>
+            <div class="page-hero-shell">
+                <div class="page-hero-copy" data-reveal>
+                    <div class="page-eyebrow"><i class="fa-solid fa-book-open-reader"></i> Recursos</div>
+                    <h1>Centro de Recursos</h1>
+                    <p>Información, artículos, descargas y casos de éxito para optimizar tu salud ocupacional con más
+                        contexto y menos ruido.</p>
+                    <div class="page-actions">
+                        <a href="#blog-grid" class="btn btn-secondary btn-lg"><i class="fa-solid fa-newspaper"></i> Leer
+                            artículos</a>
+                        <a href="#downloads-section" class="btn btn-outline btn-lg"><i class="fa-solid fa-download"></i>
+                            Ver descargas</a>
+                    </div>
+                </div>
+                <div class="page-visual" data-reveal>
+                    <div class="page-image glass-panel">
+                        <img data-parallax="true" data-parallax-speed="0.06"
+                            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80"
+                            alt="Equipo revisando documentación y análisis">
+                    </div>
+                    <div class="page-floating-card" data-parallax="true" data-parallax-speed="0.03">
+                        <strong><i class="fa-solid fa-lightbulb"></i> Material útil</strong>
+                        <span>Guías prácticas, plantillas y aprendizaje aplicado a la operación.</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Últimos Artículos</h2>
-            <div class="grid-3" id="blog-grid">
-                <div class="card">
-                    <div
-                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+            <div class="section-kicker" style="justify-content:center;"><i class="fa-solid fa-newspaper"></i> Últimos
+                artículos</div>
+            <h2 class="section-title">Contenido con enfoque técnico y ejecutivo</h2>
+            <div class="resource-grid" id="blog-grid">
+                <article class="article-card" data-reveal>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80"
+                            alt="Documentación y evaluación de ergonomía">
                     </div>
-                    <span
-                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Normativa</span>
-                    <h3 class="card-title">NOM-036 explicada para empresas</h3>
-                    <p class="card-text">Guía completa sobre qué exige la norma de ergonomía y cómo implementarla.</p>
-                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
-                        2024-01-15</p>
-                    <a href="recursos/nom-036-explicada.html" class="btn btn-primary btn-sm"
-                        style="margin-top: var(--space-md);">Leer más</a>
-                </div>
-                <div class="card">
-                    <div
-                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    <div style="padding: 1.3rem;">
+                        <div class="article-meta"><span class="meta-chip"><i class="fa-solid fa-file-lines"></i>
+                                Normativa</span></div>
+                        <h3 class="card-title">NOM-036 explicada para empresas</h3>
+                        <p class="card-text">Guía completa sobre qué exige la norma de ergonomía y cómo implementarla.
+                        </p>
+                        <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                            2024-01-15</p>
+                        <a href="recursos/nom-036-explicada.html" class="btn btn-primary btn-sm"
+                            style="margin-top: var(--space-md);">Leer más</a>
                     </div>
-                    <span
-                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Financiero</span>
-                    <h3 class="card-title">Cómo reducir la Prima de Riesgo IMSS</h3>
-                    <p class="card-text">Estrategias probadas para disminuir tu Prima de Riesgo sin comprometer la
-                        seguridad.</p>
-                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
-                        2024-01-10</p>
-                    <a href="recursos/reducir-prima-riesgo.html" class="btn btn-primary btn-sm"
-                        style="margin-top: var(--space-md);">Leer más</a>
-                </div>
-                <div class="card">
-                    <div
-                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                </article>
+                <article class="article-card" data-reveal>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+                            alt="Análisis financiero y prevención de riesgos">
                     </div>
-                    <span
-                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Salud</span>
-                    <h3 class="card-title">Diferencia entre enfermedad general y riesgo de trabajo</h3>
-                    <p class="card-text">Clasificación correcta: cuándo una enfermedad es profesional y qué implica
-                        legalmente.</p>
-                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
-                        2024-01-05</p>
-                    <a href="recursos/enfermedad-vs-riesgo.html" class="btn btn-primary btn-sm"
-                        style="margin-top: var(--space-md);">Leer más</a>
-                </div>
-                <div class="card">
-                    <div
-                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    <div style="padding: 1.3rem;">
+                        <div class="article-meta"><span class="meta-chip"><i class="fa-solid fa-coins"></i>
+                                Financiero</span></div>
+                        <h3 class="card-title">Cómo reducir la Prima de Riesgo IMSS</h3>
+                        <p class="card-text">Estrategias probadas para disminuir tu Prima de Riesgo sin comprometer la
+                            seguridad.</p>
+                        <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                            2024-01-10</p>
+                        <a href="recursos/reducir-prima-riesgo.html" class="btn btn-primary btn-sm"
+                            style="margin-top: var(--space-md);">Leer más</a>
                     </div>
-                    <span
-                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Auditoría</span>
-                    <h3 class="card-title">¿Qué revisa la STPS durante una inspección?</h3>
-                    <p class="card-text">Checklist completo de lo que espera encontrar la STPS y cómo prepararse.</p>
-                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
-                        2023-12-28</p>
-                    <a href="recursos/stps-inspeccion.html" class="btn btn-primary btn-sm"
-                        style="margin-top: var(--space-md);">Leer más</a>
-                </div>
-                <div class="card">
-                    <div
-                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                </article>
+                <article class="article-card" data-reveal>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                            alt="Equipo colaborando en torno a salud y seguridad">
                     </div>
-                    <span
-                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Ergonomía</span>
-                    <h3 class="card-title">Ergonomía en líneas de producción</h3>
-                    <p class="card-text">Cómo optimizar puestos de trabajo para prevenir lesiones y aumentar
-                        rendimiento.</p>
-                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
-                        2023-12-20</p>
-                    <a href="recursos/ergonomia-produccion.html" class="btn btn-primary btn-sm"
-                        style="margin-top: var(--space-md);">Leer más</a>
-                </div>
-                <div class="card">
-                    <div
-                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+                    <div style="padding: 1.3rem;">
+                        <div class="article-meta"><span class="meta-chip"><i class="fa-solid fa-user-doctor"></i>
+                                Salud</span></div>
+                        <h3 class="card-title">Diferencia entre enfermedad general y riesgo de trabajo</h3>
+                        <p class="card-text">Clasificación correcta: cuándo una enfermedad es profesional y qué implica
+                            legalmente.</p>
+                        <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                            2024-01-05</p>
+                        <a href="recursos/enfermedad-vs-riesgo.html" class="btn btn-primary btn-sm"
+                            style="margin-top: var(--space-md);">Leer más</a>
                     </div>
-                    <span
-                        style="display: inline-block; padding: var(--space-xs) var(--space-md); background-color: var(--light); color: var(--primary); font-size: var(--font-size-sm); font-weight: 600; border-radius: var(--radius-full); margin-bottom: var(--space-md);">Productividad</span>
-                    <h3 class="card-title">Cómo disminuir el ausentismo laboral</h3>
-                    <p class="card-text">Investigación y estrategias para reducir ausencias y mejorar la asistencia.</p>
-                    <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
-                        2023-12-15</p>
-                    <a href="recursos/disminuir-ausentismo.html" class="btn btn-primary btn-sm"
-                        style="margin-top: var(--space-md);">Leer más</a>
-                </div>
+                </article>
+                <article class="article-card" data-reveal>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                            alt="Auditoría y revisión documental en planta">
+                    </div>
+                    <div style="padding: 1.3rem;">
+                        <div class="article-meta"><span class="meta-chip"><i class="fa-solid fa-clipboard-check"></i>
+                                Auditoría</span></div>
+                        <h3 class="card-title">¿Qué revisa la STPS durante una inspección?</h3>
+                        <p class="card-text">Checklist completo de lo que espera encontrar la STPS y cómo prepararse.
+                        </p>
+                        <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                            2023-12-28</p>
+                        <a href="recursos/stps-inspeccion.html" class="btn btn-primary btn-sm"
+                            style="margin-top: var(--space-md);">Leer más</a>
+                    </div>
+                </article>
+                <article class="article-card" data-reveal>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=80"
+                            alt="Línea de producción con enfoque ergonómico">
+                    </div>
+                    <div style="padding: 1.3rem;">
+                        <div class="article-meta"><span class="meta-chip"><i class="fa-solid fa-person-digging"></i>
+                                Ergonomía</span></div>
+                        <h3 class="card-title">Ergonomía en líneas de producción</h3>
+                        <p class="card-text">Cómo optimizar puestos de trabajo para prevenir lesiones y aumentar
+                            rendimiento.</p>
+                        <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                            2023-12-20</p>
+                        <a href="recursos/ergonomia-produccion.html" class="btn btn-primary btn-sm"
+                            style="margin-top: var(--space-md);">Leer más</a>
+                    </div>
+                </article>
+                <article class="article-card" data-reveal>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1520975922284-9e1e5e8a0b0f?auto=format&fit=crop&w=1200&q=80"
+                            alt="Equipo revisando indicadores de ausentismo y bienestar">
+                    </div>
+                    <div style="padding: 1.3rem;">
+                        <div class="article-meta"><span class="meta-chip"><i class="fa-solid fa-user-clock"></i>
+                                Productividad</span></div>
+                        <h3 class="card-title">Cómo disminuir el ausentismo laboral</h3>
+                        <p class="card-text">Investigación y estrategias para reducir ausencias y mejorar la asistencia.
+                        </p>
+                        <p style="font-size: var(--font-size-sm); color: var(--gray); margin-top: var(--space-md);">
+                            2023-12-15</p>
+                        <a href="recursos/disminuir-ausentismo.html" class="btn btn-primary btn-sm"
+                            style="margin-top: var(--space-md);">Leer más</a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
     <section class="section section-light">
         <div class="container">
-            <h2 class="section-title">Descargas Gratuitas</h2>
-            <div id="downloads-section">
-                <div class="grid-2" style="gap: var(--space-xl);">
-                    <div class="card">
-                        <h3 class="card-title">📄 Checklist de Seguridad</h3>
-                        <p class="card-text">Descarga gratuita en PDF o Excel</p>
+            <div class="section-split">
+                <div data-reveal>
+                    <div class="section-kicker"><i class="fa-solid fa-download"></i> Descargas</div>
+                    <h2 class="section-title" style="text-align:left; width:auto; margin-bottom: var(--space-lg);">
+                        Plantillas y materiales listos para usar</h2>
+                    <p>Descargas gratuitas para acelerar tu diagnóstico, orden documental y gestión interna.</p>
+                </div>
+                <div class="feature-grid" id="downloads-section">
+                    <div class="resource-card" data-reveal>
+                        <div class="resource-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <h3>Checklist de Seguridad</h3>
+                        <p>Descarga gratuita en PDF o Excel</p>
                         <a href="../assets/downloads/checklist-seguridad.pdf" class="btn btn-primary btn-sm"
                             download>Descargar</a>
                     </div>
-                    <div class="card">
-                        <h3 class="card-title">📄 Matriz de Riesgos Plantilla</h3>
-                        <p class="card-text">Descarga gratuita en PDF o Excel</p>
+                    <div class="resource-card" data-reveal>
+                        <div class="resource-icon"><i class="fa-solid fa-table"></i></div>
+                        <h3>Matriz de Riesgos Plantilla</h3>
+                        <p>Descarga gratuita en PDF o Excel</p>
                         <a href="../assets/downloads/matriz-riesgos-plantilla.xlsx" class="btn btn-primary btn-sm"
                             download>Descargar</a>
                     </div>
-                    <div class="card">
-                        <h3 class="card-title">📄 Guía NOM-035</h3>
-                        <p class="card-text">Descarga gratuita en PDF o Excel</p>
+                    <div class="resource-card" data-reveal>
+                        <div class="resource-icon"><i class="fa-solid fa-book"></i></div>
+                        <h3>Guía NOM-035</h3>
+                        <p>Descarga gratuita en PDF o Excel</p>
                         <a href="../assets/downloads/guia-nom-035.pdf" class="btn btn-primary btn-sm"
                             download>Descargar</a>
                     </div>
@@ -174,69 +224,41 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Casos de Éxito</h2>
-            <div class="grid-3" id="cases-grid">
-                <div class="card">
-                    <div
-                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
-                    </div>
-                    <h3 class="card-title">Empresa Manufacturera XYZ</h3>
-                    <p
-                        style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
-                        Manufactura</p>
-                    <div
-                        style="background-color: var(--light); padding: var(--space-md); border-radius: var(--radius-lg); margin-bottom: var(--space-md);">
-                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
-                            <strong>Reto:</strong> Prima de Riesgo elevada y ausentismo recurrente
-                        </p>
-                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
-                            <strong>Resultado:</strong> Reducción del 35% en Prima de Riesgo
-                        </p>
-                        <p style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600;">
-                            <strong>Impacto:</strong> Ahorro anual de $250,000
-                        </p>
+            <div class="section-kicker" style="justify-content:center;"><i class="fa-solid fa-trophy"></i> Casos de
+                éxito</div>
+            <h2 class="section-title">Resultados que se pueden explicar con claridad</h2>
+            <div class="resource-grid" id="cases-grid">
+                <div class="case-card" data-reveal>
+                    <div class="case-icon"><i class="fa-solid fa-industry"></i></div>
+                    <h3>Empresa Manufacturera XYZ</h3>
+                    <p class="case-meta"><span class="meta-chip">Manufactura</span></p>
+                    <div class="glass-panel" style="padding: var(--space-md);">
+                        <p><strong>Reto:</strong> Prima de Riesgo elevada y ausentismo recurrente</p>
+                        <p><strong>Resultado:</strong> Reducción del 35% en Prima de Riesgo</p>
+                        <p style="color: var(--accent); font-weight: 700;"><strong>Impacto:</strong> Ahorro anual de
+                            $250,000</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div
-                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
-                    </div>
-                    <h3 class="card-title">Grupo Industrial ABC</h3>
-                    <p
-                        style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
-                        Alimentaria</p>
-                    <div
-                        style="background-color: var(--light); padding: var(--space-md); border-radius: var(--radius-lg); margin-bottom: var(--space-md);">
-                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
-                            <strong>Reto:</strong> Inspección STPS inminente sin preparación
-                        </p>
-                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
-                            <strong>Resultado:</strong> Aprobación sin observaciones
-                        </p>
-                        <p style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600;">
-                            <strong>Impacto:</strong> Cero multas, proceso documentado
-                        </p>
+                <div class="case-card" data-reveal>
+                    <div class="case-icon"><i class="fa-solid fa-bowl-food"></i></div>
+                    <h3>Grupo Industrial ABC</h3>
+                    <p class="case-meta"><span class="meta-chip">Alimentaria</span></p>
+                    <div class="glass-panel" style="padding: var(--space-md);">
+                        <p><strong>Reto:</strong> Inspección STPS inminente sin preparación</p>
+                        <p><strong>Resultado:</strong> Aprobación sin observaciones</p>
+                        <p style="color: var(--accent); font-weight: 700;"><strong>Impacto:</strong> Cero multas,
+                            proceso documentado</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div
-                        style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
-                    </div>
-                    <h3 class="card-title">Planta DEF</h3>
-                    <p
-                        style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600; margin-bottom: var(--space-md);">
-                        Química</p>
-                    <div
-                        style="background-color: var(--light); padding: var(--space-md); border-radius: var(--radius-lg); margin-bottom: var(--space-md);">
-                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
-                            <strong>Reto:</strong> Lesiones frecuentes en línea de envasado
-                        </p>
-                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-sm);">
-                            <strong>Resultado:</strong> Reducción del 60% en lesiones
-                        </p>
-                        <p style="font-size: var(--font-size-sm); color: var(--accent); font-weight: 600;">
-                            <strong>Impacto:</strong> Mejora de productividad y moral de equipo
-                        </p>
+                <div class="case-card" data-reveal>
+                    <div class="case-icon"><i class="fa-solid fa-flask-vial"></i></div>
+                    <h3>Planta DEF</h3>
+                    <p class="case-meta"><span class="meta-chip">Química</span></p>
+                    <div class="glass-panel" style="padding: var(--space-md);">
+                        <p><strong>Reto:</strong> Lesiones frecuentes en línea de envasado</p>
+                        <p><strong>Resultado:</strong> Reducción del 60% en lesiones</p>
+                        <p style="color: var(--accent); font-weight: 700;"><strong>Impacto:</strong> Mejora de
+                            productividad y moral de equipo</p>
                     </div>
                 </div>
             </div>
@@ -245,24 +267,15 @@
 
     <section class="section section-light">
         <div class="container">
-            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
-                <h2 class="section-title">Newsletter Mensual</h2>
-                <p style="margin-bottom: var(--space-lg);">Recibe actualizaciones normativas, artículos y mejores
-                    prácticas directamente en tu correo.</p>
-                <form style="display: flex; gap: var(--space-sm);" action="mailto:info@kaizenmedicalsolutions.com"
-                    method="post" enctype="text/plain">
-                    <input type="email" name="email" placeholder="Tu correo electrónico" class="form-control" required>
-                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+            <div class="cta-section" style="max-width: 760px; margin: 0 auto;">
+                <h2>Newsletter Mensual</h2>
+                <p>Recibe actualizaciones normativas, artículos y mejores prácticas directamente en tu correo.</p>
+                <form style="display: flex; gap: var(--space-sm); flex-wrap: wrap; justify-content:center;"
+                    action="mailto:info@kaizenmedicalsolutions.com" method="post" enctype="text/plain">
+                    <input type="email" name="email" placeholder="Tu correo electrónico" class="form-control" required
+                        style="max-width: 360px;">
+                    <button type="submit" class="btn btn-secondary">Suscribirse</button>
                 </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="cta-section">
-                <h2>¿Quieres una evaluación personalizada?</h2>
-                <a href="contacto.html" class="btn btn-secondary btn-lg">Contacta con Nosotros</a>
             </div>
         </div>
     </section>
@@ -286,7 +299,7 @@
                 <div class="footer-section">
                     <h4>Navegación</h4>
                     <ul>
-                        <li><a href="../">Inicio</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="recursos.html">Recursos</a></li>
