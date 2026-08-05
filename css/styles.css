@@ -207,8 +207,8 @@ ol {
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+    background-color: #0f1f39;
+    border-color: #0f1f39;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -220,9 +220,18 @@ ol {
 }
 
 .btn-secondary:hover {
-    opacity: 0.9;
+    background-color: #6faa43;
+    border-color: #6faa43;
+    color: var(--white);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary:hover i,
+.btn-secondary:focus-visible,
+.btn-secondary:focus-visible i {
+    color: var(--white);
+    text-decoration: none;
 }
 
 .btn-outline {
@@ -234,6 +243,7 @@ ol {
 .btn-outline:hover {
     background-color: var(--primary);
     color: var(--white);
+    border-color: var(--primary);
 }
 
 .btn-white {
@@ -243,9 +253,9 @@ ol {
 }
 
 .btn-white:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #f1f5f9;
     color: var(--primary);
-    border-color: rgba(255, 255, 255, 0.9);
+    border-color: #dbe3ee;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -540,6 +550,8 @@ header {
 
 .nav-link:hover {
     color: var(--accent);
+    background-color: rgba(var(--accent-rgb), 0.12);
+    border-radius: var(--radius-lg);
     text-decoration: none;
 }
 
@@ -570,8 +582,16 @@ header {
 }
 
 .nav-cta:hover {
-    background-color: transparent;
-    color: var(--accent);
+    background-color: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
+    text-decoration: none;
+}
+
+.nav-cta:focus-visible {
+    background-color: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
     text-decoration: none;
 }
 
