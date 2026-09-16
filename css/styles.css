@@ -838,6 +838,175 @@ header {
     gap: var(--space-xl);
 }
 
+.services-intro {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto var(--space-2xl);
+}
+
+.section-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 0.55rem 1rem;
+    border-radius: var(--radius-full);
+    background: rgba(36, 50, 99, 0.06);
+    color: var(--primary);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-md);
+}
+
+.services-intro h2 {
+    margin-bottom: var(--space-md);
+    color: var(--primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.services-intro p {
+    color: var(--gray);
+    font-size: var(--font-size-lg);
+    line-height: 1.7;
+}
+
+.service-infographic-list {
+    display: grid;
+    gap: var(--space-xl);
+}
+
+.service-infographic {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(245, 249, 253, 0.98) 100%);
+    border: 1px solid rgba(22, 40, 69, 0.08);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-soft);
+    padding: clamp(1.25rem, 2vw, 2rem);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-infographic::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 8px;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--secondary) 100%);
+}
+
+.service-infographic-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.service-infographic-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 1.25rem;
+    background: linear-gradient(135deg, rgba(36, 50, 99, 0.12), rgba(135, 191, 93, 0.22));
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: inset 0 0 0 1px rgba(36, 50, 99, 0.08);
+    flex-shrink: 0;
+}
+
+.service-badge {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: rgba(135, 191, 93, 0.12);
+    border-radius: 999px;
+    padding: 0.45rem 0.7rem;
+}
+
+.service-infographic h3 {
+    margin: 0;
+    color: var(--primary);
+    font-size: clamp(1.5rem, 2vw, 2.1rem);
+}
+
+.service-summary {
+    color: var(--gray);
+    font-size: 1.04rem;
+    line-height: 1.7;
+    margin-bottom: var(--space-xl);
+}
+
+.service-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-lg);
+}
+
+.info-block {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(22, 40, 69, 0.06);
+    border-radius: 1.2rem;
+    padding: 1.2rem 1rem 1rem;
+}
+
+.info-block h4 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.check-list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color: var(--gray);
+}
+
+.check-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    line-height: 1.5;
+}
+
+.check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.success-list li::before {
+    content: "→";
+    color: var(--secondary);
+}
+
+.service-cta {
+    margin-top: var(--space-2xl);
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: var(--radius-xl);
+    color: #fff;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    box-shadow: 0 18px 40px rgba(36, 50, 99, 0.18);
+}
+
+.service-cta p {
+    margin: 0 0 1rem;
+    font-size: clamp(1.05rem, 2vw, 1.5rem);
+    color: #fff;
+}
+
 .service-card {
     background-color: var(--white);
     border-radius: var(--radius-xl);
@@ -907,6 +1076,16 @@ header {
 
 .service-card .btn {
     align-self: flex-start;
+}
+
+@media (max-width: 800px) {
+    .service-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-infographic-header {
+        align-items: flex-start;
+    }
 }
 
 /* Sección "Por qué elegirnos" */
