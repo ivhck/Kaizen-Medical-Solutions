@@ -13,6 +13,34 @@
     }
 }
 
+@keyframes premiumFadeUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 22px, 0) scale(0.985);
+        filter: blur(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes premiumImageReveal {
+    from {
+        opacity: 0;
+        transform: translate3d(14px, 18px, 0) scale(0.96);
+        filter: blur(3px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+        filter: blur(0);
+    }
+}
+
 /* Fade In - Entrada suave */
 @keyframes fadeIn {
     from {
