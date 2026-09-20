@@ -36,13 +36,26 @@
                     <span></span>
                     <span></span>
                 </button>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="./" class="nav-link">Inicio</a></li>
-                    <li><a href="pages/servicios.html" class="nav-link">Servicios</a></li>
-                    <li><a href="pages/nosotros.html" class="nav-link">Nosotros</a></li>
-                    <li><a href="pages/recursos.html" class="nav-link">Recursos</a></li>
-                    <li><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
-                </ul>
+                <div class="nav-right">
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="./" class="nav-link">Inicio</a></li>
+                        <li><a href="pages/servicios.html" class="nav-link">Servicios</a></li>
+                        <li><a href="pages/nosotros.html" class="nav-link">Nosotros</a></li>
+                        <li><a href="pages/recursos.html" class="nav-link">Recursos</a></li>
+                        <li><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <ul class="nav-socials" aria-label="Redes sociales">
+                        <li><a href="https://www.facebook.com/profile.php?id=61594061057339" target="_blank"
+                                rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/kaizenmedsolutions/" target="_blank" rel="noopener"
+                                aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/kaizenmedsolutions/posts/?feedView=all"
+                                target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.youtube.com/@KaizenMedical" target="_blank" rel="noopener"
+                                aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -60,7 +73,7 @@
 
                     <div class="hero-actions">
                         <a href="https://calendly.com/degmuz/15min?month=2026-08" class="btn btn-secondary btn-lg"><i
-                                class="fa-solid fa-calendar-check"></i> Agenda una consultoría</a>
+                                class="fa-solid fa-heart-pulse"></i> Agenda una consultoría</a>
                         <a href="pages/servicios.html" class="btn btn-white btn-lg"><i
                                 class="fa-solid fa-layer-group"></i> Ver soluciones</a>
                     </div>
@@ -384,8 +397,45 @@
     <!-- Principio del widget de globo de Calendly -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script
-        type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/degmuz/15min', text: 'Agenda una consultoria.', color: '#0069ff', textColor: '#ffffff', branding: false }); }</script>
+    <script type="text/javascript">
+        function forceCalendlyPosition() {
+            const badge = document.querySelector('.calendly-badge-widget');
+            if (!badge) return;
+
+            badge.style.setProperty('position', 'fixed', 'important');
+            badge.style.setProperty('left', '20px', 'important');
+            badge.style.setProperty('right', 'auto', 'important');
+            badge.style.setProperty('bottom', '15px', 'important');
+            badge.style.setProperty('top', 'auto', 'important');
+            badge.style.setProperty('z-index', '900', 'important');
+            badge.style.setProperty('transform', 'none', 'important');
+
+            const child = badge.querySelector('.calendly-badge-content');
+            if (child) {
+                child.style.setProperty('border-radius', '999px', 'important');
+            }
+        }
+
+        function initCalendlyBadge() {
+            if (!window.Calendly) {
+                setTimeout(initCalendlyBadge, 200);
+                return;
+            }
+
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/degmuz/15min',
+                text: 'Agenda una\nconsultoría',
+                color: '#0069ff',
+                textColor: '#ffffff',
+                branding: false
+            });
+
+            setInterval(forceCalendlyPosition, 300);
+            setTimeout(() => forceCalendlyPosition(), 1000);
+        }
+
+        window.addEventListener('load', initCalendlyBadge);
+    </script>
     <!-- Final del widget de globo de Calendly -->
 
     <footer id="footer">
@@ -395,12 +445,17 @@
                     <img src="assets/images/Logo_Kaizen_white.png" alt="Kaizen Medical Solutions" class="footer-logo">
                     <p>Soluciones de Salud Ocupacional para una Industria más Productiva y Rentable</p>
                     <ul class="social-links">
-                        <li><a href="#facebook" title="Facebook" aria-label="Facebook"><i
+                        <li><a href="https://www.facebook.com/profile.php?id=61594061057339" target="_blank"
+                                rel="noopener" title="Facebook" aria-label="Facebook"><i
                                     class="fab fa-facebook-f"></i></a>
                         </li>
-                        <li><a href="#linkedin" title="LinkedIn" aria-label="LinkedIn"><i
+                        <li><a href="https://www.instagram.com/kaizenmedsolutions/" target="_blank" rel="noopener"
+                                title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/kaizenmedsolutions/posts/?feedView=all"
+                                target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i
                                     class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#youtube" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <li><a href="https://www.youtube.com/@KaizenMedical" target="_blank" rel="noopener"
+                                title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -415,15 +470,13 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4><i class="fas fa-phone"></i> Contacto</h4>
+                    <h4>Contacto</h4>
                     <ul>
                         <li><a href="tel:+528182055612"><i class="fas fa-phone-alt"></i> +52 81 8205 5612</a>
                         </li>
                         <li><a href="mailto:info@kaizenmedicalsolutions.com"><i class="fas fa-envelope"></i>
                                 info@kaizenmedicalsolutions.com</a></li>
-                        <li>
-                            <p><i class="fas fa-map-marker-alt"></i> Dirección de la empresa</p>
-                        </li>
+
                     </ul>
                 </div>
                 <div class="footer-section">

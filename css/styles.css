@@ -541,11 +541,50 @@ header {
     transform: scale(1.08);
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
     align-items: center;
     gap: var(--space-lg);
+    margin: 0;
+}
+
+.nav-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding-left: 1rem;
+    border-left: 1px solid rgba(var(--primary-rgb), 0.12);
+}
+
+.nav-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    color: var(--primary);
+    border-radius: 50%;
+    transition: all 0.25s ease;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.nav-socials a:hover,
+.nav-socials a:focus-visible {
+    color: var(--accent);
+    background: rgba(var(--accent-rgb), 0.14);
+    transform: translateY(-2px) scale(1.08);
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.18);
 }
 
 .nav-link {
@@ -1182,7 +1221,7 @@ footer {
 }
 
 .footer-logo {
-    max-height: 120px;
+    max-height: 140px;
     width: auto;
     margin-bottom: var(--space-lg);
     display: block;
@@ -1199,27 +1238,29 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.15);
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: rgba(255, 255, 255, 0.12);
     border-radius: 50%;
-    transition: var(--transition);
+    transition: all 0.25s ease;
     color: var(--white);
-    font-size: 1.25rem;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .social-links a:hover {
-    background-color: var(--accent);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.28);
+    background-color: rgba(var(--accent-rgb), 0.15);
+    color: var(--accent);
+    transform: translateY(-2px) scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .social-links i {
-    transition: transform 0.3s ease;
+    transition: transform 0.25s ease;
 }
 
 .social-links a:hover i {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .footer-bottom {
@@ -1359,6 +1400,46 @@ select:focus-visible {
     height: 830px;
     position: relative;
     z-index: 1;
+}
+
+.page-hero-shell {
+    grid-template-columns: 1fr;
+}
+
+.page-visual {
+    display: none !important;
+}
+
+.services-hero {
+    background:
+        linear-gradient(90deg, rgba(12, 31, 72, 0.88) 0%, rgba(12, 31, 72, 0.72) 34%, rgba(12, 31, 72, 0.34) 100%),
+        url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+}
+
+.about-hero {
+    background:
+        linear-gradient(90deg, rgba(12, 31, 72, 0.88) 0%, rgba(12, 31, 72, 0.72) 34%, rgba(12, 31, 72, 0.34) 100%),
+        url('https://images.unsplash.com/photo-1573164574395-5405ba0c2c8f?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+}
+
+.resources-hero {
+    background:
+        linear-gradient(90deg, rgba(12, 31, 72, 0.88) 0%, rgba(12, 31, 72, 0.72) 34%, rgba(12, 31, 72, 0.34) 100%),
+        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+}
+
+.contact-hero {
+    background:
+        linear-gradient(90deg, rgba(12, 31, 72, 0.88) 0%, rgba(12, 31, 72, 0.72) 34%, rgba(12, 31, 72, 0.34) 100%),
+        url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+}
+
+.services-hero .page-hero-copy,
+.about-hero .page-hero-copy,
+.resources-hero .page-hero-copy,
+.contact-hero .page-hero-copy {
+    max-width: 760px;
+    padding: 4rem 0;
 }
 
 .hero-copy,
@@ -1950,7 +2031,7 @@ select:focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: var(--accent);
     color: var(--white);
     border: none;
     box-shadow: var(--shadow-xl);
@@ -1960,18 +2041,195 @@ select:focus-visible {
     z-index: 1000;
 }
 
-.calendly-badge {
-    bottom: 92px !important;
-    right: 18px !important;
+.whatsapp-float {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #25d366;
+    color: var(--white);
+    border: none;
+    box-shadow: 0 16px 32px rgba(37, 211, 102, 0.28);
+    position: fixed;
+    right: 88px;
+    bottom: 20px;
+    z-index: 999;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.whatsapp-float i {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 36px rgba(37, 211, 102, 0.34);
+}
+
+.whatsapp-chat-modal {
+    position: fixed;
+    right: 88px;
+    bottom: 88px;
+    width: min(340px, calc(100vw - 32px));
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(18, 27, 35, 0.06);
+    border-radius: 22px 22px 18px 18px;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+    overflow: hidden;
+    z-index: 1200;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px) scale(0.96);
+    transform-origin: bottom right;
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+    backdrop-filter: blur(12px);
+}
+
+.whatsapp-chat-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.whatsapp-chat-header {
+    background: linear-gradient(135deg, #20c15a, #15a34a);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.whatsapp-chat-header .chat-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.whatsapp-chat-header .chat-title::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    display: inline-block;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.18);
+}
+
+.whatsapp-chat-header .chat-close {
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    color: var(--white);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.95;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-chat-body {
+    padding: 16px;
+    background: linear-gradient(180deg, #f8fafc 0%, #f4f7fb 100%);
+}
+
+.whatsapp-chat-body p {
+    margin: 0 0 12px;
+    font-size: 0.9rem;
+    color: #334155;
+    line-height: 1.5;
+}
+
+.whatsapp-chat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.whatsapp-chat-form textarea {
+    width: 100%;
+    min-height: 92px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 14px;
+    resize: vertical;
+    padding: 12px 14px;
+    font: inherit;
+    color: #111827;
+    background: var(--white);
+    box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.whatsapp-send-btn {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #25d366, #1bbd59);
+    color: var(--white);
+    border: none;
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 12px 24px rgba(37, 211, 102, 0.25);
+}
+
+.calendly-badge-widget {
+    position: fixed !important;
+    right: 150px !important;
+    left: auto !important;
+    bottom: 20px !important;
+    top: auto !important;
     z-index: 900 !important;
+    transform: none !important;
+    height: 52px !important;
 }
 
-.calendly-badge .calendly-badge-content {
+.calendly-badge-widget .calendly-badge-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: pre-line !important;
+    line-height: 1.15 !important;
+    padding: 0 18px !important;
+    min-height: 52px !important;
+    height: 52px !important;
     border-radius: 999px !important;
+    gap: 8px !important;
 }
 
-.calendly-badge .calendly-badge-content span:last-child,
-.calendly-badge .calendly-badge-content .calendly-badge-branding {
+.calendly-badge-widget .calendly-badge-content::before {
+    content: "\f073";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-size: 0.9rem;
+    line-height: 1;
+    transform: translateY(-1px);
+}
+
+.calendly-badge-widget>div {
+    position: fixed !important;
+    right: 150px !important;
+    left: auto !important;
+    bottom: 20px !important;
+    top: auto !important;
+    height: 52px !important;
+}
+
+.calendly-badge-widget .calendly-badge-content span:last-child,
+.calendly-badge-widget .calendly-badge-content .calendly-badge-branding {
     display: none !important;
 }
 

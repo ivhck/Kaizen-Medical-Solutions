@@ -156,6 +156,59 @@ function initScrollToTop() {
         'display: none'
     ].join('; ');
 
+    const whatsappButton = document.createElement('button');
+    whatsappButton.type = 'button';
+    whatsappButton.className = 'whatsapp-float';
+    whatsappButton.setAttribute('aria-label', 'Abrir chat de WhatsApp');
+    whatsappButton.innerHTML = '<i class="fa-brands fa-whatsapp"></i>';
+    whatsappButton.style.cssText = [
+        'position: fixed',
+        'bottom: 20px',
+        'right: 88px',
+        'z-index: 999',
+        'display: inline-flex'
+    ].join('; ');
+
+    const whatsappModal = document.createElement('div');
+    whatsappModal.className = 'whatsapp-chat-modal';
+    whatsappModal.innerHTML = `
+        <div class="whatsapp-chat-header">
+            <span class="chat-title">WhatsApp</span>
+            <button type="button" class="chat-close" aria-label="Cerrar chat">×</button>
+        </div>
+        <div class="whatsapp-chat-body">
+            <p>Escríbenos y te responderemos al instante.</p>
+            <form class="whatsapp-chat-form">
+                <textarea placeholder="Hola, quiero más información...">Hola Kaizen Medical Solutions, quiero más información.</textarea>
+                <button type="submit" class="whatsapp-send-btn">Enviar</button>
+            </form>
+        </div>
+    `;
+
+    const closeChat = function () {
+        whatsappModal.classList.remove('is-open');
+    };
+
+    whatsappButton.addEventListener('click', function () {
+        whatsappModal.classList.toggle('is-open');
+        const textarea = whatsappModal.querySelector('textarea');
+        if (textarea) {
+            textarea.focus();
+        }
+    });
+
+    whatsappModal.querySelector('.chat-close').addEventListener('click', closeChat);
+    whatsappModal.querySelector('.whatsapp-chat-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const textarea = whatsappModal.querySelector('textarea');
+        const message = (textarea ? textarea.value.trim() : '') || 'Hola Kaizen Medical Solutions, quiero más información.';
+        const whatsappUrl = 'https://wa.me/528182055612?text=' + encodeURIComponent(message);
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        closeChat();
+    });
+
+    document.body.appendChild(whatsappModal);
+    document.body.appendChild(whatsappButton);
     document.body.appendChild(scrollButton);
 
     let visible = false;
