@@ -702,10 +702,10 @@ header {
 .nav-socials a:hover,
 .nav-socials a:focus-visible {
     color: var(--accent);
-    background: rgba(var(--accent-rgb), 0.14);
-    transform: translateY(-2px) scale(1.08);
+    background: transparent;
+    transform: none;
     text-decoration: none;
-    box-shadow: 0 6px 18px rgba(var(--accent-rgb), 0.18);
+    box-shadow: none;
 }
 
 .nav-link {
@@ -719,9 +719,10 @@ header {
 
 .nav-link:hover {
     color: var(--accent);
-    background-color: rgba(var(--accent-rgb), 0.12);
-    border-radius: var(--radius-lg);
+    background-color: transparent;
+    border-radius: 0;
     text-decoration: none;
+    box-shadow: none;
 }
 
 .nav-link::after {
@@ -1628,29 +1629,30 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.2rem;
-    height: 2.2rem;
-    background-color: rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    transition: all 0.25s ease;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-radius: 0;
+    transition: color 0.25s ease;
     color: var(--white);
-    font-size: 0.9rem;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 1rem;
+    border: none;
+    padding: 0;
 }
 
 .social-links a:hover {
-    background-color: rgba(var(--accent-rgb), 0.15);
+    background-color: transparent;
     color: var(--accent);
-    transform: translateY(-2px) scale(1.08);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: none;
+    box-shadow: none;
 }
 
 .social-links i {
-    transition: transform 0.25s ease;
+    transition: none;
 }
 
 .social-links a:hover i {
-    transform: scale(1.15);
+    transform: none;
 }
 
 .footer-bottom {
