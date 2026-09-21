@@ -6,7 +6,62 @@ document.addEventListener('DOMContentLoaded', function () {
     initParallax();
     initActiveNavLink();
     initFormValidation();
+    initCalendlyBadge();
 });
+
+function initCalendlyBadge() {
+    if (document.querySelector('.calendly-badge-widget')) {
+        return;
+    }
+
+    const existingLink = document.querySelector('link[href*="calendly.com/assets/external/widget.css"]');
+    if (!existingLink) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://assets.calendly.com/assets/external/widget.css';
+        document.head.appendChild(link);
+    }
+
+    if (!window.Calendly) {
+        const existingScript = document.querySelector('script[src*="assets.calendly.com/assets/external/widget.js"]');
+        if (!existingScript) {
+            const script = document.createElement('script');
+            script.src = 'https://assets.calendly.com/assets/external/widget.js';
+            script.async = true;
+            script.onload = function () {
+                initCalendlyBadge();
+            };
+            document.head.appendChild(script);
+        }
+        return;
+    }
+
+    Calendly.initBadgeWidget({
+        url: 'https://calendly.com/degmuz/15min',
+        text: 'Agenda una\nconsultoría',
+        color: '#0069ff',
+        textColor: '#ffffff',
+        branding: false
+    });
+
+    const badge = document.querySelector('.calendly-badge-widget');
+    if (!badge) {
+        return;
+    }
+
+    badge.style.setProperty('position', 'fixed', 'important');
+    badge.style.setProperty('left', '20px', 'important');
+    badge.style.setProperty('right', 'auto', 'important');
+    badge.style.setProperty('bottom', '15px', 'important');
+    badge.style.setProperty('top', 'auto', 'important');
+    badge.style.setProperty('z-index', '900', 'important');
+    badge.style.setProperty('transform', 'none', 'important');
+
+    const child = badge.querySelector('.calendly-badge-content');
+    if (child) {
+        child.style.setProperty('border-radius', '999px', 'important');
+    }
+}
 
 function initMobileMenu() {
     const navMenu = document.getElementById('nav-menu');

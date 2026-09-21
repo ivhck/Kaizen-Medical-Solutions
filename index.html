@@ -428,49 +428,6 @@
         </div>
     </section>
 
-    <!-- Principio del widget de globo de Calendly -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">
-        function forceCalendlyPosition() {
-            const badge = document.querySelector('.calendly-badge-widget');
-            if (!badge) return;
-
-            badge.style.setProperty('position', 'fixed', 'important');
-            badge.style.setProperty('left', '20px', 'important');
-            badge.style.setProperty('right', 'auto', 'important');
-            badge.style.setProperty('bottom', '15px', 'important');
-            badge.style.setProperty('top', 'auto', 'important');
-            badge.style.setProperty('z-index', '900', 'important');
-            badge.style.setProperty('transform', 'none', 'important');
-
-            const child = badge.querySelector('.calendly-badge-content');
-            if (child) {
-                child.style.setProperty('border-radius', '999px', 'important');
-            }
-        }
-
-        function initCalendlyBadge() {
-            if (!window.Calendly) {
-                setTimeout(initCalendlyBadge, 200);
-                return;
-            }
-
-            Calendly.initBadgeWidget({
-                url: 'https://calendly.com/degmuz/15min',
-                text: 'Agenda una\nconsultoría',
-                color: '#0069ff',
-                textColor: '#ffffff',
-                branding: false
-            });
-
-            setInterval(forceCalendlyPosition, 300);
-            setTimeout(() => forceCalendlyPosition(), 1000);
-        }
-
-        window.addEventListener('load', initCalendlyBadge);
-    </script>
-    <!-- Final del widget de globo de Calendly -->
 
     <footer id="footer">
         <div class="container">
