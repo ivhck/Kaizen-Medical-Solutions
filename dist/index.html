@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Soluciones de Salud Ocupacional para una Industria más Productiva y Rentable. Auditorías, ergonomía y gestión de riesgos laborales.">
+    <meta name="keywords" content="Salud Ocupacional, STPS, IMSS, Auditoría, Ergonomía, Riesgos Laborales">
+    <meta name="author" content="Kaizen Medical Solutions">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; base-uri 'self'; form-action 'self' https://calendly.com https://wa.me; frame-ancestors 'none'; frame-src 'self' https://calendly.com https://*.calendly.com; img-src 'self' data: https: blob:; script-src 'self' 'unsafe-inline' https://assets.calendly.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; connect-src 'self' https://*.calendly.com https://wa.me; object-src 'none'; upgrade-insecure-requests;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>Kaizen Medical Solutions - Salud Ocupacional Industrial</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="./"><img src="assets/images/Logo_Kaizen.png" alt="Kaizen Medical Solutions"
+                            class="navbar-logo"></a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-right">
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="./" class="nav-link">Inicio</a></li>
+                        <li><a href="pages/servicios.html" class="nav-link">Servicios</a></li>
+                        <li><a href="pages/nosotros.html" class="nav-link">Nosotros</a></li>
+                        <li><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <ul class="nav-socials" aria-label="Redes sociales">
+                        <li><a href="https://www.facebook.com/profile.php?id=61594061057339" target="_blank"
+                                rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/kaizenmedsolutions/" target="_blank" rel="noopener"
+                                aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/kaizenmedsolutions/posts/?feedView=all"
+                                target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.youtube.com/@KaizenMedical" target="_blank" rel="noopener"
+                                aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-split">
+        <div class="container">
+            <div class="hero-shell">
+                <div class="hero-copy" data-reveal>
+                    <div class="hero-text-block">
+                        <h1 id="hero-title">Salud ocupacional que protege personas y rentabilidad</h1>
+                        <p id="hero-subtitle">Diseñamos estrategias de prevención, cumplimiento y control de riesgos
+                            para
+                            que tu operación luzca sólida frente a STPS, IMSS y tu dirección financiera.</p>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="https://calendly.com/degmuz/15min?month=2026-08" class="btn btn-secondary btn-lg"><i
+                                class="fa-solid fa-heart-pulse"></i> Agenda una consultoría</a>
+                        <a href="pages/servicios.html" class="btn btn-white btn-lg"><i
+                                class="fa-solid fa-layer-group"></i> Ver soluciones</a>
+                    </div>
+
+                    <div class="hero-trust" aria-label="Beneficios clave">
+                        <span class="hero-pill"><i class="fa-solid fa-circle-check"></i> Menos ausentismo</span>
+                        <span class="hero-pill"><i class="fa-solid fa-circle-check"></i> Cumplimiento visible</span>
+                        <span class="hero-pill"><i class="fa-solid fa-circle-check"></i> Mejor prima IMSS</span>
+                    </div>
+
+                    <div class="stats-strip" data-reveal>
+                        <div class="stat-card">
+                            <span class="stat-value">360°</span>
+                            <span class="stat-label">Cobertura preventiva y documental</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">NOM</span>
+                            <span class="stat-label">Procesos alineados a normativa</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">ROI</span>
+                            <span class="stat-label">Decisiones enfocadas en ahorro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="hero-visual" data-reveal src="assets/images/Hero2.png"
+                    alt="Kaizen Medical Solutions - Salud ocupacional industrial">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-split" data-reveal>
+                <div class="section-image-slab" data-reveal>
+                    <img data-parallax="true" data-parallax-speed="0.05" src="assets/images/Operative.png"
+                        alt="Diagnóstico ejecutivo de procesos operativos">
+                    <div class="overlay">
+                        <strong><i class="fa-solid fa-helmet-safety"></i> Prevención que protege tu
+                            rentabilidad</strong>
+                        <p>Detectamos riesgos ergonómicos que impactan salud, ausentismo y productividad.</p>
+                    </div>
+                </div>
+
+                <div data-reveal>
+                    <div class="section-kicker"><i class="fa-solid fa-magnifying-glass-chart"></i> Diagnóstico ejecutivo
+                    </div>
+                    <h2 class="section-title" style="text-align:left; width:auto; margin-bottom: var(--space-lg);">Los
+                        problemas operativos cuestan más de lo que parece</h2>
+                    <p class="section-subtitle" style="text-align:left; margin-bottom: var(--space-xl);">Convertimos
+                        brechas
+                        de cumplimiento y ergonomía en planes de acción<br>
+                        claros, medibles y presentables ante dirección.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-circle-check"></i><span>Menos ausentismo y rotación por lesiones
+                                prevenibles.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Menor exposición a multas y observaciones
+                                normativas.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Documentación sólida para inspecciones y
+                                auditorías.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Productividad más estable en procesos
+                                sensibles.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="services-intro">
+                <div class="section-kicker"><i class="fa-solid fa-badge-check"></i> Nuestra propuesta de valor</div>
+                <h2 class="section-title">Una operación más sana, ordenada y rentable</h2>
+            </div>
+
+            <div class="feature-grid" id="value-cards" style="max-width: 980px; margin: 0 auto;">
+                <div class="feature-item" data-reveal>
+                    <div class="feature-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h3>Prevención</h3>
+                    <p>Identificamos riesgos antes de que se conviertan en costos, lesiones o pérdidas de tiempo.</p>
+                </div>
+                <div class="feature-item" data-reveal>
+                    <div class="feature-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+                    <h3>Cumplimiento</h3>
+                    <p>Ordenamos evidencia, procedimientos y controles para responder con claridad ante STPS e IMSS.</p>
+                </div>
+                <div class="feature-item" data-reveal>
+                    <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Rentabilidad</h3>
+                    <p>Priorizamos acciones que reducen siniestralidad, mejoran continuidad operativa y liberan
+                        presupuesto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="services-intro">
+                <div class="section-kicker" style="justify-content:center;"><i
+                        class="fa-solid fa-screwdriver-wrench"></i>
+                    Servicios estratégicos</div>
+                <h2 class="section-title">Soluciones pensadas para industria real</h2>
+                <p class="section-subtitle">Cada servicio combina análisis técnico, comunicación ejecutiva y entregables
+                    que
+                    puedes usar en operación.</p>
+            </div>
+
+            <div class="services-grid" id="services-grid">
+                <article class="service-card" data-reveal>
+                    <div class="service-image" style="height: 220px;">
+                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80"
+                            alt="Evaluación ergonómica en entorno de trabajo">
+                        <div class="service-icon-overlay" style="position:absolute; inset:auto auto 1rem 1rem;"><i
+                                class="fa-solid fa-person-cane"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-title">Ingeniería Ergonómica</div>
+                        <div class="service-subtitle">NOM-036</div>
+                        <div class="service-description">Identificamos y corregimos factores de riesgo ergonómico en tus
+                            procesos con foco en productividad y salud.</div>
+                        <a href="pages/servicios.html#ingenieria-ergonomica" class="btn btn-primary btn-sm">Conocer
+                            más</a>
+                    </div>
+                </article>
+                <article class="service-card" data-reveal>
+                    <div class="service-image" style="height: 220px;">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80"
+                            alt="Equipo de auditoría y cumplimiento revisando documentos">
+                        <div class="service-icon-overlay" style="position:absolute; inset:auto auto 1rem 1rem;"><i
+                                class="fa-solid fa-clipboard-list"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-title">Auditoría STPS</div>
+                        <div class="service-subtitle">NOMS SECRETARIA DEL TRABAJO Y PREVISION SOCIAL APLICABLES A TU
+                            EMPRESA</div>
+                        <div class="service-description">Auditoría integral de cumplimiento normativo con enfoque en
+                            evidencia, brechas y acciones correctivas.</div>
+                        <a href="pages/servicios.html#auditoria-stps" class="btn btn-primary btn-sm">Conocer más</a>
+                    </div>
+                </article>
+                <article class="service-card" data-reveal>
+                    <div class="service-image" style="height: 220px;">
+                        <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1200&q=80"
+                            alt="Revisión financiera y análisis de riesgos">
+                        <div class="service-icon-overlay" style="position:absolute; inset:auto auto 1rem 1rem;"><i
+                                class="fa-solid fa-coins"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-title">Defensa de Prima IMSS</div>
+                        <div class="service-subtitle">Optimización financiera</div>
+                        <div class="service-description">Análisis técnico para reducir tu Prima de Riesgo con evidencia
+                            y
+                            trazabilidad documental.</div>
+                        <a href="pages/servicios.html#defensa-prima-imss" class="btn btn-primary btn-sm">Conocer más</a>
+                    </div>
+                </article>
+                <article class="service-card" data-reveal>
+                    <div class="service-image" style="height: 220px;">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80"
+                            alt="Analistas revisando indicadores de salud ocupacional">
+                        <div class="service-icon-overlay" style="position:absolute; inset:auto auto 1rem 1rem;"><i
+                                class="fa-solid fa-chart-pie"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-title">Gestión Integral de Riesgos</div>
+                        <div class="service-subtitle">Control de formatos ST2, ST7 y ST9</div>
+                        <div class="service-description">Sistema completo de identificación, evaluación y control de
+                            riesgos
+                            con seguimiento continuo.</div>
+                        <a href="pages/servicios.html#gestion-integral-riesgos" class="btn btn-primary btn-sm">Conocer
+                            más</a>
+                    </div>
+                </article>
+                <article class="service-card" data-reveal>
+                    <div class="service-image" style="height: 220px;">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80"
+                            alt="Análisis de datos para prevención y epidemiología">
+                        <div class="service-icon-overlay" style="position:absolute; inset:auto auto 1rem 1rem;"><i
+                                class="fa-solid fa-notes-medical"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-title">Inteligencia Epidemiológica</div>
+                        <div class="service-subtitle">Análisis y prevención</div>
+                        <div class="service-description">Lectura científica de patrones de accidente para priorizar
+                            acciones
+                            donde sí mueven la aguja.</div>
+                        <a href="pages/servicios.html#inteligencia-epidemiologica"
+                            class="btn btn-primary btn-sm">Conocer
+                            más</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="parallax-band executive-panel" data-reveal>
+                <div class="content-split" style="padding: clamp(1.5rem, 4vw, 3rem); align-items:center;">
+                    <div style="max-width: 760px;">
+                        <div class="section-kicker" style="color:#cfe8b8; margin-bottom: 1rem;"><i
+                                class="fa-solid fa-tower-broadcast"></i>
+                            Enfoque ejecutivo</div>
+                        <h2
+                            style="color: var(--white); margin: 0 0 1rem 0; line-height: 1.08; letter-spacing: -0.03em; font-size: clamp(2rem, 3vw, 3rem);">
+                            Transformamos hallazgos en decisiones accionables</h2>
+                        <p style="color: rgba(255,255,255,0.88); margin: 0; line-height: 1.5; font-size: 1.05rem;">
+                            Entregamos una narrativa clara para dirección, operaciones y recursos humanos, con
+                            prioridades, responsables y seguimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" hidden aria-label="Recursos en desarrollo">
+        <div class="container">
+            <div class="services-intro">
+                <div class="section-kicker"><i class="fa-solid fa-book-open"></i> Contenido y casos</div>
+                <h2 class="section-title">Recursos que aterrizan la estrategia</h2>
+            </div>
+
+            <div class="resource-grid"
+                style="max-width: 980px; margin: var(--space-2xl) auto 0; justify-items: center;">
+                <article class="article-card" data-reveal>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+                            alt="Equipo revisando información técnica">
+                    </div>
+                    <div style="padding: 1.3rem;">
+                        <div class="article-meta"><span class="meta-chip"><i class="fa-solid fa-file-lines"></i>
+                                Guía</span>
+                        </div>
+                        <h3>NOM-036 explicada para empresas</h3>
+                        <p>Una lectura práctica para traducir ergonomía en controles, capacitación y resultados
+                            visibles.
+                        </p>
+                        <a href="pages/recursos/nom-036-explicada.html" class="btn btn-primary btn-sm">Leer más</a>
+                    </div>
+                </article>
+                <article class="article-card" data-reveal>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+                            alt="Análisis financiero y operativo">
+                    </div>
+                    <div style="padding: 1.3rem;">
+                        <div class="article-meta"><span class="meta-chip"><i class="fa-solid fa-chart-simple"></i>
+                                Riesgo</span></div>
+                        <h3>Cómo reducir la Prima de Riesgo IMSS</h3>
+                        <p>Estrategias y evidencia para bajar costos sin comprometer seguridad ni disciplina documental.
+                        </p>
+                        <a href="pages/recursos/reducir-prima-riesgo.html" class="btn btn-primary btn-sm">Leer más</a>
+                    </div>
+                </article>
+                <article class="article-card" data-reveal>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
+                            alt="Reunión de equipo interdisciplinario">
+                    </div>
+                    <div style="padding: 1.3rem;">
+                        <div class="article-meta"><span class="meta-chip"><i class="fa-solid fa-users"></i> Casos</span>
+                        </div>
+                        <h3>Casos de éxito y aprendizajes</h3>
+                        <p>Ejemplos de implementación que muestran cómo un enfoque serio en salud ocupacional sí genera
+                            retorno.</p>
+                        <a href="pages/recursos.html" class="btn btn-primary btn-sm">Explorar recursos</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <section class="section section-light why-choose-section">
+        <div class="container">
+            <div class="services-intro">
+                <div class="section-kicker"><i class="fa-solid fa-circle-check"></i> ¿Por qué elegirnos?</div>
+                <h2 class="section-title">Una alianza que convierte salud ocupacional en ventaja competitiva</h2>
+            </div>
+
+            <div class="why-choose-diagram" id="metrics-grid" data-reveal>
+                <div class="diagram-center">
+                    <img src="assets/images/Logo_Kaizen.png" alt="Kaizen Medical Solutions" class="diagram-logo">
+                </div>
+
+                <div class="diagram-node node-1">
+                    <div class="node-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="node-copy">
+                        <strong>Cumplimiento</strong>
+                        <span>Normativo</span>
+                    </div>
+                </div>
+
+                <div class="diagram-node node-2">
+                    <div class="node-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                    <div class="node-copy">
+                        <strong>Gestión</strong>
+                        <span>Médica</span>
+                    </div>
+                </div>
+
+                <div class="diagram-node node-3">
+                    <div class="node-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="node-copy">
+                        <strong>Enfoque</strong>
+                        <span>Financiero</span>
+                    </div>
+                </div>
+
+                <div class="diagram-node node-4">
+                    <div class="node-icon"><i class="fa-solid fa-globe"></i></div>
+                    <div class="node-copy">
+                        <strong>Metodología</strong>
+                        <span>Global</span>
+                    </div>
+                </div>
+
+                <div class="diagram-node node-5">
+                    <div class="node-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="node-copy">
+                        <strong>Atención</strong>
+                        <span>Personalizada</span>
+                    </div>
+                </div>
+
+                <div class="diagram-node node-6">
+                    <div class="node-icon"><i class="fa-solid fa-headset"></i></div>
+                    <div class="node-copy">
+                        <strong>Soporte</strong>
+                        <span>Técnico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="cta-section" id="final-cta">
+                <h2>¿Listo para reducir riesgos y aumentar la rentabilidad de tu empresa?</h2>
+                <a href="pages/contacto.html" class="btn btn-secondary btn-lg">Agenda una reunión de 15 minutos</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/images/Logo_Kaizen_white.png" alt="Kaizen Medical Solutions" class="footer-logo">
+                    <p>Soluciones de Salud Ocupacional para una Industria más Productiva y Rentable</p>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/profile.php?id=61594061057339" target="_blank"
+                                rel="noopener" title="Facebook" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/kaizenmedsolutions/" target="_blank" rel="noopener"
+                                title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/kaizenmedsolutions/posts/?feedView=all"
+                                target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.youtube.com/@KaizenMedical" target="_blank" rel="noopener"
+                                title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="./">Inicio</a></li>
+                        <li><a href="pages/servicios.html">Servicios</a></li>
+                        <li><a href="pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="tel:+528182055612"><i class="fas fa-phone-alt"></i> +52 81 8205 5612</a>
+                        </li>
+                        <li><a href="mailto:info@kaizenmedicalsolutions.com"><i class="fas fa-envelope"></i>
+                                info@kaizenmedicalsolutions.com</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 Kaizen Medical Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/interactions.js"></script>
+</body>
+
+</html>

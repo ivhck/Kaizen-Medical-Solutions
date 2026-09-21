@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kaizen Medical Solutions">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162845"/>
+      <stop offset="100%" stop-color="#243263"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)"/>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="#87BF5D" stroke-width="4"/>
+  <path d="M22 42V22h6v8l8-8h8l-10 10 10 10h-8l-8-8v8z" fill="#FFFFFF"/>
+</svg>
